@@ -14,7 +14,7 @@
 
 :exclamation: Desenvolver o código CSS --
 
-:exclamation: Criar a página index, apresentando os termos do site --
+:exclamation: Criar a página index, apresentando os termos do site -- 50% :last_quarter_moon:
 
 
 ## Tecnologias Utilizadas
