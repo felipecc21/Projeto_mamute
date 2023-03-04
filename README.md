@@ -6,15 +6,15 @@
 
 :collision: Para iniciar o projeto, será necessário:
 
-:exclamation: Definir as possibilidades da história -- 
+:exclamation: Definir as possibilidades da história -- 56,67% :last_quarter_moon:
 
 :exclamation: Desenvolver o código HTML -- 
 
-:exclamation: Desenvolver o código JS --
+:exclamation: Desenvolver o código JS -- 
 
 :exclamation: Desenvolver o código CSS --
 
-:exclamation: Criar a página index, apresentando os termos do site -- 50% :last_quarter_moon:
+:heavy_check_mark: Criar a página index, apresentando os termos do site -- 100% 🌔 
 
 
 ## Tecnologias Utilizadas
