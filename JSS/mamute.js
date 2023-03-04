@@ -92,8 +92,7 @@ if (gato == 'Não') {
         voar_message = 'Era uma vez um mamute chamado Max, que nunca havia se interessado em voar. Ele passava seus dias caminhando pela floresta em busca de comida e água para sobreviver. Max era muito solitário e não tinha amigos para conversar ou passar o tempo. Dia após dia, Max seguia a mesma rotina monótona e sem graça. Ele não tinha nada que a animasse e sua vida parecia sem sentido. Ele não sabia o que fazer para mudar sua situação, mas também não tinha a energia ou motivação para tentar algo novo. <br>';
         break;
 }
-
-document.write(voar_message);
+document.getElementById("voarMessage").innerHTML = voar_message;
 
 /*fumar*/  switch (true) {
             case (fumar === 'Sim' && cachorro === 'Sim'):
@@ -120,7 +119,9 @@ document.write(voar_message);
                 fumar_message = 'Passou então a levar uma vida solitária, sem cultivar amizades, e seguia seu caminho com passos pesados, deixando uma marca profunda em cada lugar por onde passava. Apesar de nunca ter sido atraído pelo vício do tabaco, preferindo manter seus pulmões livres daquela fumaça tóxica, ele ocasionalmente sentia-se incomodado com a solidão. À noite, quando as estrelas brilhavam no céu e a lua iluminava a escuridão, ouvia os risos e conversas dos outros animais que se reuniam em torno da fogueira e se perguntava se não deveria se juntar a eles. Mas  ele nem mesmo fumava, será que valeria a pena começar a fumar para se aproximar das pessoas. ” Besteiro ! Isso seria tolice, melhor deixar como está” pensou ele, fechando os olhos e adormecendo. ';
                 break;
         }
-        document.write(fumar_message);
+        document.getElementById("fumarMessage").innerHTML = fumar_message;    
+        
+        
 
 /*beber*/ switch (true) {
 
@@ -148,7 +149,8 @@ document.write(voar_message);
                 beber_message: 'Não bebe e nao tem amigos ';
                 break;
         }
-        document.write(beber_message);
+        
+        document.getElementById("beberMessage").innerHTML  = beber_message;
 
 /*transar*/ switch (true) {
 
@@ -176,7 +178,7 @@ document.write(voar_message);
                 transar_message = 'não transa e não tem amigos';
                 break;
         }
-        document.write(transar_message);
+        document.getElementById("transarMessage").innerHTML  = transar_message;
 
 /*Drograr*/ switch (true) {
 
@@ -204,4 +206,4 @@ document.write(voar_message);
                 drogras_message = 'não transa e não tem amigos';
                 break;
         }
-        document.write(drogras_message);
+        document.getElementById("drogasMessage").innerHTML  = drogras_message;
