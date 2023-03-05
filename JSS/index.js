@@ -35,6 +35,6 @@ const direcionamento = document.getElementById('Submit_botton');
 direcionamento.addEventListener('click', () => {
   // Espera 2 segundos antes de redirecionar
   setTimeout(() => {
-    window.location.href = './HTML/mamute.html';
+    window.location.href = './HTML/mamute_questions.html';
   }, 1500);
 });

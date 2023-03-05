@@ -1,73 +1,317 @@
-/*Variaveis das açoes*/
-var voar;
-var fumar;
-var beber;
-var transar;
-var drogas;
+
+
+//Variaveis das açoes
+
+ var voar;
+  var fumar;
+ var beber;
+  var transar;
+  var drogas;
+
+
 
 /*Variaveis das amizades 1*/
 
-var pombinha;
-var cachorro;
-var urso;
-var jegue;
-var gato;
+
+ var pombinha;
+ var cachorro;
+ var urso;
+ var jegue;
+ var gato;
+
+
 
 /* Variaveis das amizades 2*/
 
-var aguia;
-var lobo;
-var bufalo;
-var cavalo;
-var jaguar;
+ var aguia;
+ var lobo;
+ var bufalo;
+ var cavalo;
+ var leao;
 
 /* Variveis das respostas*/
 
-var voar_message;
-var fumar_message;
-var beber_message;
-var transar_message;
-var drogras_message;
+   var voar_message;
+   var fumar_message;
+   var beber_message;
+   var transar_message;
+   var drogras_message;
 
-/*Descisão das açoes*/
+//Funçoes das açoes....
 
-voar = window.prompt('Ele queria voar ? ( Sim ou Não)');
-fumar = window.prompt('Ele queria fumar ? ( Sim ou Não)');
-beber = window.prompt('Ele queria beber ? ( Sim ou Não)');
-transar = window.prompt('Ele queria transar ? ( Sim ou Não)');
-drogas = window.prompt('Ele queria se drogar ? ( Sim ou Não)');
+//voar Sim
+function gravarResposta1_S() {
+    voar = 'Sim';
+    document.getElementById('pergunta1').style.display = 'none';
+    document.getElementById('pergunta2').style.display = 'block';
+    document.querySelector('input[name="resposta1"]:checked').checked = false;
+    console.log(voar);
+}
+// voar não
+function gravarResposta1_N() {
+    voar = 'Não';
+    document.getElementById('pergunta1').style.display = 'none';
+    document.getElementById('pergunta2').style.display = 'block';
+    document.querySelector('input[name="resposta1"]:checked').checked = false;
 
-/*descisão das amizades 1*/
-
-pombinha = window.prompt('Ele tinha uma pombinha como amiga? ( Sim ou Não)');
-cachorro = window.prompt('Ele tinha um cachorro como amigo? ( Sim ou Não)');
-urso = window.prompt('Ele tinha um urso como amigo? ( Sim ou Não)');
-jegue = window.prompt('Ele tinha um jegue como amigo? ( Sim ou Não)');
-gato = window.prompt('Ele tinha um gato como amigo? ( Sim ou Não)');
-
-/*descisão das amizades 2*/
-
-if (pombinha == 'Não') {
-
-    aguia = window.prompt('Ele tinha uma águia como amiga? ( Sim ou Não)');
+}
+//Fumar sim
+function gravarResposta2_S() {
+    fumar = 'Sim';
+    document.getElementById('pergunta2').style.display = 'none';
+    document.getElementById('pergunta3').style.display = 'block';
+    document.querySelector('input[name="resposta2"]:checked').checked = false;
+}
+//fumar não
+function gravarResposta2_N() {
+    fumar = 'Não';
+    document.getElementById('pergunta2').style.display = 'none';
+    document.getElementById('pergunta3').style.display = 'block';
+    document.querySelector('input[name="resposta2"]:checked').checked = false;
+}
+// beber sim
+function gravarResposta3_S() {
+    beber = 'Sim';
+    document.getElementById('pergunta3').style.display = 'none';
+    document.getElementById('pergunta4').style.display = 'block';
+    document.querySelector('input[name="resposta3"]:checked').checked = false;
+}
+// beber não
+function gravarResposta3_N() {
+    beber = 'Não';
+    document.getElementById('pergunta3').style.display = 'none';
+    document.getElementById('pergunta4').style.display = 'block';
+    document.querySelector('input[name="resposta3"]:checked').checked = false;
+}
+//transar sim
+function gravarResposta4_S() {
+    transar = 'Sim';
+    document.getElementById('pergunta4').style.display = 'none';
+    document.getElementById('pergunta5').style.display = 'block';
+    document.querySelector('input[name="resposta4"]:checked').checked = false;
+}
+//transar não
+function gravarResposta4_N() {
+    transar = 'Não';
+    document.getElementById('pergunta4').style.display = 'none';
+    document.getElementById('pergunta5').style.display = 'block';
+    document.querySelector('input[name="resposta4"]:checked').checked = false;
+}
+// drogras sim
+function gravarResposta5_S() {
+    drogas = 'Sim';
+    document.getElementById('pergunta5').style.display = 'none';
+    document.getElementById('pergunta6').style.display = 'block';
+    document.querySelector('input[name="resposta5"]:checked').checked = false;
+}
+// Drogras não
+function gravarResposta5_N() {
+    drogas = 'Não';
+    document.getElementById('pergunta5').style.display = 'none';
+    document.getElementById('pergunta6').style.display = 'block';
+    document.querySelector('input[name="resposta5"]:checked').checked = false;
 }
 
 
-if (cachorro == 'Não') {
-    lobo = window.prompt('Ele tinha um lobo como amigo? ( Sim ou Não)');
+// Funçoes das amizades 1
+
+//pombinha Sim
+function gravarResposta6_S() {
+    pombinha = 'Sim';
+    document.getElementById('pergunta6').style.display = 'none';
+    document.getElementById('pergunta7').style.display = 'block';
+    document.querySelector('input[name="resposta6"]:checked').checked = false;
+}
+//pombinha Não
+function gravarResposta6_N() {
+    pombinha = 'Não';
+    document.getElementById('pergunta6').style.display = 'none';
+
+    // Oculta todas as outras perguntas que podem estar na tela
+    document.getElementById('pergunta7').style.display = 'none';
+    document.getElementById('pergunta8').style.display = 'none';
+    document.getElementById('pergunta9').style.display = 'none';
+    document.getElementById('pergunta10').style.display = 'none';
+
+    // Mostra a pergunta 
+    document.getElementById('pergunta11').style.display = 'block';
+    document.querySelector('input[name="resposta11"]:checked').checked = false;
+}
+//Cachorro Sim
+function gravarResposta7_S() {
+    cachorro = 'Sim';
+    document.getElementById('pergunta7').style.display = 'none';
+    document.getElementById('pergunta8').style.display = 'block';
+    document.querySelector('input[name="resposta7"]:checked').checked = false;
+}
+//Cachorro Não
+function gravarResposta7_N() {
+    cachorro = 'Não';
+    document.getElementById('pergunta6').style.display = 'none';
+
+    // Oculta todas as outras perguntas que podem estar na tela
+    document.getElementById('pergunta7').style.display = 'none';
+    document.getElementById('pergunta8').style.display = 'none';
+    document.getElementById('pergunta9').style.display = 'none';
+    document.getElementById('pergunta10').style.display = 'none';
+
+    // Mostra a pergunta 
+    document.getElementById('pergunta12').style.display = 'block';
+    document.querySelector('input[name="resposta12"]:checked').checked = false;
 }
 
-if (urso == 'Não') {
-    bufalo = window.prompt('Ele tinha um bufalo como amigo? ( Sim ou Não)');
+//urso Sim
+function gravarResposta8_S() {
+    urso = 'Sim';
+    document.getElementById('pergunta8').style.display = 'none';
+    document.getElementById('pergunta9').style.display = 'block';
+    document.querySelector('input[name="resposta8"]:checked').checked = false;
+}
+//Urso Não
+function gravarResposta8_N() {
+    urso = 'Não';
+    document.getElementById('pergunta6').style.display = 'none';
+
+    // Oculta todas as outras perguntas que podem estar na tela
+    document.getElementById('pergunta7').style.display = 'none';
+    document.getElementById('pergunta8').style.display = 'none';
+    document.getElementById('pergunta9').style.display = 'none';
+    document.getElementById('pergunta10').style.display = 'none';
+
+    // Mostra a pergunta 11
+    document.getElementById('pergunta13').style.display = 'block';
+    document.querySelector('input[name="resposta6"]:checked').checked = false;
 }
 
-if (jegue == 'Não') {
-    cavalo = window.prompt('Ele tinha uma zebra como amiga? ( Sim ou Não)');
+//jegue SIm 
+
+function gravarResposta9_S() {
+    jegue = 'Sim';
+    document.getElementById('pergunta9').style.display = 'none';
+    document.getElementById('pergunta10').style.display = 'block';
+    document.querySelector('input[name="resposta9"]:checked').checked = false;
 }
 
-if (gato == 'Não') {
-    leão = window.prompt('Ele tinha um jaguar como amigo? ( Sim ou Não)');
+//jegue não
+
+function gravarResposta9_N() {
+    jegue = 'Não';
+    document.getElementById('pergunta6').style.display = 'none';
+
+    // Oculta todas as outras perguntas que podem estar na tela
+    document.getElementById('pergunta7').style.display = 'none';
+    document.getElementById('pergunta8').style.display = 'none';
+    document.getElementById('pergunta9').style.display = 'none';
+    document.getElementById('pergunta10').style.display = 'none';
+
+    // Mostra a pergunta 
+    document.getElementById('pergunta14').style.display = 'block';
+    document.querySelector('input[name="resposta6"]:checked').checked = false;
 }
+
+//gato sim
+
+function gravarResposta10_S() {
+    gato = 'Sim';
+    document.getElementById('pergunta10').style.display = 'none';
+    document.getElementById('pergunta11').style.display = 'none';
+    document.querySelector('input[name="resposta10"]:checked').checked = false;
+    //window.location.assign("../HTML/mamute_history.html");
+}
+
+//gato não
+
+function gravarResposta10_N() {
+    gato = 'Não';
+    document.getElementById('pergunta6').style.display = 'none';
+
+    // Oculta todas as outras perguntas que podem estar na tela
+    document.getElementById('pergunta7').style.display = 'none';
+    document.getElementById('pergunta8').style.display = 'none';
+    document.getElementById('pergunta9').style.display = 'none';
+    document.getElementById('pergunta10').style.display = 'none';
+
+    // Mostra a pergunta 11
+    document.getElementById('pergunta15').style.display = 'block';
+    document.querySelector('input[name="resposta6"]:checked').checked = false;
+    //window.location.assign("../HTML/mamute_history.html");
+}
+
+
+// Animais 2
+//Aguia Sim
+function gravarResposta11_S(){
+    aguia = 'Sim';
+    document.getElementById('pergunta11').style.display = 'none';
+    document.getElementById('pergunta7').style.display = 'block';
+    document.querySelector('input[name="resposta11"]:checked').checked = false;
+}
+//Aguia Não
+function gravarResposta11_N(){
+    aguia = 'Não';
+    document.getElementById('pergunta11').style.display = 'none';
+    document.getElementById('pergunta7').style.display = 'block';
+    document.querySelector('input[name="resposta11"]:checked').checked = false;
+}
+//lobo sim
+function gravarResposta12_S(){
+    lobo = 'Sim';
+    document.getElementById('pergunta12').style.display = 'none';
+    document.getElementById('pergunta8').style.display = 'block';
+    document.querySelector('input[name="resposta12"]:checked').checked = false;
+}
+//lobo não
+function gravarResposta12_N(){
+    lobo = 'Não';
+    document.getElementById('pergunta12').style.display = 'none';
+    document.getElementById('pergunta8').style.display = 'block';
+    document.querySelector('input[name="resposta12"]:checked').checked = false;
+}
+//buffalo sim
+function gravarResposta13_S(){
+    bufalo = 'Sim';
+    document.getElementById('pergunta13').style.display = 'none';
+    document.getElementById('pergunta9').style.display = 'block';
+    document.querySelector('input[name="resposta13"]:checked').checked = false;
+}
+//bufalo nao
+function gravarResposta13_N(){
+    bufalo = 'Não';
+    document.getElementById('pergunta13').style.display = 'none';
+    document.getElementById('pergunta9').style.display = 'block';
+    document.querySelector('input[name="resposta13"]:checked').checked = false;
+}
+//cavalo sim
+function gravarResposta14_S(){
+    cavalo = 'Sim';
+    document.getElementById('pergunta14').style.display = 'none';
+    document.getElementById('pergunta10').style.display = 'block';
+    document.querySelector('input[name="resposta14"]:checked').checked = false;
+}
+//cavalo nao
+function gravarResposta14_N(){
+    cavalo = 'Não';
+    document.getElementById('pergunta14').style.display = 'none';
+    document.getElementById('pergunta10').style.display = 'block';
+    document.querySelector('input[name="resposta14"]:checked').checked = false;
+}
+// leao sim
+function gravarResposta15_S(){
+    leao = 'Sim';
+    document.getElementById('pergunta15').style.display = 'none';
+    document.getElementById('pergunta11').style.display = 'none';
+    document.querySelector('input[name="resposta15"]:checked').checked = false;
+    //window.location.assign("../HTML/mamute_history.html");
+}
+// leao nao
+function gravarResposta15_N(){
+    leao = 'Não';
+    document.getElementById('pergunta15').style.display = 'none';
+    document.getElementById('pergunta11').style.display = 'none';
+    document.querySelector('input[name="resposta15"]:checked').checked = false;
+    //window.location.assign("../HTML/mamute_history.html");
+}
+
 
 
 /* Saida de dados*/
@@ -119,7 +363,8 @@ document.getElementById("voarMessage").innerHTML = voar_message;
                 fumar_message = 'Passou então a levar uma vida solitária, sem cultivar amizades, e seguia seu caminho com passos pesados, deixando uma marca profunda em cada lugar por onde passava. Apesar de nunca ter sido atraído pelo vício do tabaco, preferindo manter seus pulmões livres daquela fumaça tóxica, ele ocasionalmente sentia-se incomodado com a solidão. À noite, quando as estrelas brilhavam no céu e a lua iluminava a escuridão, ouvia os risos e conversas dos outros animais que se reuniam em torno da fogueira e se perguntava se não deveria se juntar a eles. Mas  ele nem mesmo fumava, será que valeria a pena começar a fumar para se aproximar das pessoas. ” Besteiro ! Isso seria tolice, melhor deixar como está” pensou ele, fechando os olhos e adormecendo. ';
                 break;
         }
-        document.getElementById("fumarMessage").innerHTML = fumar_message;    
+        document.getElementById("fumarMessage").innerHTML = fumar_message; 
+        console.log(fumar_message) ;  
         
         
 
@@ -207,3 +452,4 @@ document.getElementById("voarMessage").innerHTML = voar_message;
                 break;
         }
         document.getElementById("drogasMessage").innerHTML  = drogras_message;
+        window.location.href = '../HTML/mamute_history.html';
