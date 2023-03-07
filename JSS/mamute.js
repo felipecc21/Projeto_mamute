@@ -45,7 +45,7 @@ function gravarResposta1_S() {
     document.getElementById('pergunta1').style.display = 'none';
     document.getElementById('pergunta2').style.display = 'block';
     document.querySelector('input[name="resposta1"]:checked').checked = false;
-    console.log(voar);
+    
 }
 // voar não
 function gravarResposta1_N() {
