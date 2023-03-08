@@ -19,3 +19,8 @@ fieldset {
     border-radius: 8px;
     text-align: center;
 }
+
+
+#history {
+  display:none;
+}
