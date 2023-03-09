@@ -1,8 +1,6 @@
-
-
 //Variaveis das açoes
 
-let voar;
+var voar;
 var fumar;
 var beber;
 var transar;
@@ -364,58 +362,58 @@ function gravarResposta15_N() {
 /* Saida de dados*/
 
 /*Voar*/
-function hs_part1(){
-if (voar === 'Sim' && pombinha === 'Sim'){
-    voar_message = 'Era uma vez um mamute chamado Max que sonhava em voar. Ele passava horas olhando para os pássaros no céu, desejando poder se juntar a eles nas alturas. Um dia, enquanto Max observava os pássaros, uma pombinha pousou em sua tromba. Max ficou surpreso, mas curioso, e começou a conversar com a pombinha. Com o tempo, Max e a pombinha se tornaram amigos inseparáveis. Max contava a ela seus sonhos de voar, enquanto a pombinha lhe ensinava sobre os ventos e as correntes de ar. Max ficava cada vez mais determinado em alcançar seu sonho de voar, e a pombinha o incentivava Um dia, Max decidiu que era hora de tentar voar. Ele se preparou da melhor maneira que pôde, com asas improvisadas de galhos e folhas amarrados às suas costas. A pombinha voou ao seu lado, encorajando-o a tentar. Max correu em direção a um penhasco e saltou, com as asas batendo desesperadamente. Infelizmente, ele não conseguiu decolar e caiu de volta para a terra. O impacto foi tão forte que ficou lesado. <br> '
-}
+function hs_part1() {
+    if (voar === 'Sim' && pombinha === 'Sim') {
+        voar_message = 'Era uma vez um mamute chamado Max que sonhava em voar. Ele passava horas olhando para os pássaros no céu, desejando poder se juntar a eles nas alturas. Um dia, enquanto Max observava os pássaros, uma pombinha pousou em sua tromba. Max ficou surpreso, mas curioso, e começou a conversar com a pombinha. Com o tempo, Max e a pombinha se tornaram amigos inseparáveis. Max contava a ela seus sonhos de voar, enquanto a pombinha lhe ensinava sobre os ventos e as correntes de ar. Max ficava cada vez mais determinado em alcançar seu sonho de voar, e a pombinha o incentivava Um dia, Max decidiu que era hora de tentar voar. Ele se preparou da melhor maneira que pôde, com asas improvisadas de galhos e folhas amarrados às suas costas. A pombinha voou ao seu lado, encorajando-o a tentar. Max correu em direção a um penhasco e saltou, com as asas batendo desesperadamente. Infelizmente, ele não conseguiu decolar e caiu de volta para a terra. O impacto foi tão forte que ficou lesado. <br> '
+    }
 
-if (voar === 'Sim' && pombinha === 'Não' && aguia === 'Sim') {
-    voar_message = 'Era uma vez um mamute chamado Max que sonhava em voar. Ele passava horas olhando para o céu, imaginando como seria sentir o vento em suas costas enquanto voava pelas nuvens. Um dia, enquanto caminhava pelo campo, Max viu uma águia pousada em uma árvore próxima. Max se aproximou devagar, com medo de assustar a águia, mas ela não parecia se importar com sua presença. Com o tempo, Max e a águia se tornaram amigos, com Max contando a ela sobre seu sonho de voar e a águia explicando como voava. A águia era uma grande amiga, sempre encorajando Max a continuar perseguindo seu sonho. Um dia, Max decidiu que era hora de tentar voar. Ele construiu asas improvisadas com galhos e folhas, enquanto a águia assistia, pronta para ajudá-lo se necessário. Max se preparou, correu em direção a um penhasco e saltou. As asas de Max bateram furiosamente e ele sentiu o vento em seu rosto. Ele estava voando! A águia voou ao seu lado, guiando-o pelo céu enquanto Max sentia uma alegria indescritível. Eles voaram juntos por horas, Max finalmente realizando seu sonho de voar. Quando finalmente aterrissaram, Max agradeceu a águia e percebeu que, mesmo que nunca pudesse voar sozinho como ela, ele era grato por ter um amigo tão maravilhoso como a águia. <br> '
-}
+    if (voar === 'Sim' && pombinha === 'Não' && aguia === 'Sim') {
+        voar_message = 'Era uma vez um mamute chamado Max que sonhava em voar. Ele passava horas olhando para o céu, imaginando como seria sentir o vento em suas costas enquanto voava pelas nuvens. Um dia, enquanto caminhava pelo campo, Max viu uma águia pousada em uma árvore próxima. Max se aproximou devagar, com medo de assustar a águia, mas ela não parecia se importar com sua presença. Com o tempo, Max e a águia se tornaram amigos, com Max contando a ela sobre seu sonho de voar e a águia explicando como voava. A águia era uma grande amiga, sempre encorajando Max a continuar perseguindo seu sonho. Um dia, Max decidiu que era hora de tentar voar. Ele construiu asas improvisadas com galhos e folhas, enquanto a águia assistia, pronta para ajudá-lo se necessário. Max se preparou, correu em direção a um penhasco e saltou. As asas de Max bateram furiosamente e ele sentiu o vento em seu rosto. Ele estava voando! A águia voou ao seu lado, guiando-o pelo céu enquanto Max sentia uma alegria indescritível. Eles voaram juntos por horas, Max finalmente realizando seu sonho de voar. Quando finalmente aterrissaram, Max agradeceu a águia e percebeu que, mesmo que nunca pudesse voar sozinho como ela, ele era grato por ter um amigo tão maravilhoso como a águia. <br> '
+    }
 
-if(voar === 'Sim' && pombinha === 'Não' && aguia === 'Não'){
-    voar_message = 'Há muito tempo, em uma terra distante, havia um mamute solitário chamado Max. Ele passava horas olhando para o céu, sonhando em voar e imaginando como seria sentir o vento em suas costas enquanto flutuava pelas nuvens. Infelizmente, Max não tinha amigos ou companheiros que pudessem ajudá-lo a realizar seu sonho. Ele tentou construir asas improvisadas com galhos e folhas, mas todas as vezes que tentou voar, acabava caindo dolorosamente no chão. Sem ajuda, Max nunca conseguiu realizar o seu sonho de voar e continuou a viver sua vida solitária, desejando poder alcançar as alturas. <br>'
-}
+    if (voar === 'Sim' && pombinha === 'Não' && aguia === 'Não') {
+        voar_message = 'Há muito tempo, em uma terra distante, havia um mamute solitário chamado Max. Ele passava horas olhando para o céu, sonhando em voar e imaginando como seria sentir o vento em suas costas enquanto flutuava pelas nuvens. Infelizmente, Max não tinha amigos ou companheiros que pudessem ajudá-lo a realizar seu sonho. Ele tentou construir asas improvisadas com galhos e folhas, mas todas as vezes que tentou voar, acabava caindo dolorosamente no chão. Sem ajuda, Max nunca conseguiu realizar o seu sonho de voar e continuou a viver sua vida solitária, desejando poder alcançar as alturas. <br>'
+    }
 
-if (voar === 'Não' && pombinha === 'Sim'){
-    voar_message = 'Em uma floresta distante, havia um mamute chamado Max e sua amiga pombinha. A pombinha ficava perturbando Max, por ele não querer voar, com isso estava sempre fazendo bullying com ele. Max se sentia constantemente diminuído e humilhado pela pombinha, que não percebia o quão doloroso era para ele ser ridicularizado por algo que não tinha interesse. Por mais que Max gostasse da pombinha, ele não conseguia mais suportar o bullying constante que estava sofrendo. Um dia, Max não aguentou mais e decidiu que era hora de encarar seus medos. Ele subiu em uma árvore alta e saltou, com a intenção de voar. Mas como era de se esperar, ele caiu no chão, ficando ferido. <br>'
-}
+    if (voar === 'Não' && pombinha === 'Sim') {
+        voar_message = 'Em uma floresta distante, havia um mamute chamado Max e sua amiga pombinha. A pombinha ficava perturbando Max, por ele não querer voar, com isso estava sempre fazendo bullying com ele. Max se sentia constantemente diminuído e humilhado pela pombinha, que não percebia o quão doloroso era para ele ser ridicularizado por algo que não tinha interesse. Por mais que Max gostasse da pombinha, ele não conseguia mais suportar o bullying constante que estava sofrendo. Um dia, Max não aguentou mais e decidiu que era hora de encarar seus medos. Ele subiu em uma árvore alta e saltou, com a intenção de voar. Mas como era de se esperar, ele caiu no chão, ficando ferido. <br>'
+    }
 
-if (voar === 'Não' && pombinha === 'Não' && aguia === 'Sim'){
-    voar_message = 'Era uma vez, em uma floresta mágica, um mamute chamado Max que não tinha interesse em voar e preferia ficar com seus pés firmes no chão. Ele tinha uma amiga , que sempre o incentivava a tentar voar, mesmo sabendo que ele não tinha interesse nisso. A águia acreditava que voar era uma das melhores coisas do mundo e queria compartilhar essa experiência com seu amigo Max. Ela sabia que ele tinha medo de altura, mas também sabia que ele era forte e corajoso o suficiente para superar esse medo. Com o tempo, a águia percebeu que estava sendo insistente demais e respeitou a decisão de Max em não querer voar. Ela continuou sendo uma amiga leal e os dois passaram a aproveitar outros momentos juntos, como caminhar pela floresta e admirar a paisagem. <br>'
-}
+    if (voar === 'Não' && pombinha === 'Não' && aguia === 'Sim') {
+        voar_message = 'Era uma vez, em uma floresta mágica, um mamute chamado Max que não tinha interesse em voar e preferia ficar com seus pés firmes no chão. Ele tinha uma amiga , que sempre o incentivava a tentar voar, mesmo sabendo que ele não tinha interesse nisso. A águia acreditava que voar era uma das melhores coisas do mundo e queria compartilhar essa experiência com seu amigo Max. Ela sabia que ele tinha medo de altura, mas também sabia que ele era forte e corajoso o suficiente para superar esse medo. Com o tempo, a águia percebeu que estava sendo insistente demais e respeitou a decisão de Max em não querer voar. Ela continuou sendo uma amiga leal e os dois passaram a aproveitar outros momentos juntos, como caminhar pela floresta e admirar a paisagem. <br>'
+    }
 
-if (voar === 'Não' && pombinha === 'Não' && aguia === 'Não'){
-    voar_message = 'Era uma vez um mamute chamado Max, que nunca havia se interessado em voar. Ele passava seus dias caminhando pela floresta em busca de comida e água para sobreviver. Max era muito solitário e não tinha amigos para conversar ou passar o tempo. Dia após dia, Max seguia a mesma rotina monótona e sem graça. Ele não tinha nada que a animasse e sua vida parecia sem sentido. Ele não sabia o que fazer para mudar sua situação, mas também não tinha a energia ou motivação para tentar algo novo. <br>'
-}
-document.getElementById("voarMessage").innerHTML = voar_message;
+    if (voar === 'Não' && pombinha === 'Não' && aguia === 'Não') {
+        voar_message = 'Era uma vez um mamute chamado Max, que nunca havia se interessado em voar. Ele passava seus dias caminhando pela floresta em busca de comida e água para sobreviver. Max era muito solitário e não tinha amigos para conversar ou passar o tempo. Dia após dia, Max seguia a mesma rotina monótona e sem graça. Ele não tinha nada que a animasse e sua vida parecia sem sentido. Ele não sabia o que fazer para mudar sua situação, mas também não tinha a energia ou motivação para tentar algo novo. <br>'
+    }
+    document.getElementById("voarMessage").innerHTML = voar_message;
 }
 
 
 /*fumar*/
 
-function hs_part2(){
+function hs_part2() {
 
-    if(fumar === 'Sim' && cachorro === 'Sim'){
+    if (fumar === 'Sim' && cachorro === 'Sim') {
         fumar_message = 'Ele passou então a morar em uma caverna e era assombrado por um desejo estranho: fumar um cigarro. Certo dia, ele encontrou um cachorro perdido em sua caverna e os dois se tornaram amigos rapidamente. O cachorro, sendo um bicho malandro e conhecedor das vielas da cidade, conseguiu juntar uma pilha de bitucas de cigarro para Max. Com uma fita, ele fixou as bitucas na ponta da tromba do mamute e disse: "Agora é só chegar perto da fogueira e puxar com força". Max seguiu o conselho do cachorro e deu uma tragada, sentindo um breve êxtase que foi seguido de tosse e engasgo. O cachorro, parecendo mais uma hiena naquele momento, gargalhou da desgraça do amigo mamute. Desde então, Max foi apelidado de Max cinzeiro. Há boatos que ele teve cancer depois daquele dia.  '
     }
 
-    if(fumar === 'Sim' && cachorro === 'Não' && lobo === 'Sim'){
+    if (fumar === 'Sim' && cachorro === 'Não' && lobo === 'Sim') {
         fumar_message = 'Então passou a andar frequentemente com seu amigo lobo, que se achava o mais inteligente dos animais, sempre exibindo seus pelos bem escovados e uma postura pomposa. Admirando essa pose intelectual do lobo, Max começou a considerar a ideia de fumar cigarros para se assemelhar ao amigo. No entanto, preocupado com a saúde do mamute, o lobo decidiu intervir. Ele levou Max para sua toca na encosta da montanha e, ao invés de oferecer um cigarro, ensinou a ele como degustar um charuto cubano. A partir desse dia, o mamute passou a ser considerado o mais intelectual dos animais, saboreando seu charuto enquanto andava pelos campos.  '
     }
-    if(fumar === 'Sim' && cachorro === 'Não' && lobo === 'Não'){
+    if (fumar === 'Sim' && cachorro === 'Não' && lobo === 'Não') {
         fumar_message = '<br> Ele estava se sentindo solitário e frustrado, e acabou se entregando ao vício do tabagismo. Infelizmente, a vida pode ser difícil até mesmo para uma criatura gigante e forte como ele. Com o passar do tempo, o hábito de fumar tornou-se uma parte importante da rotina do mamute. Ele acendia um cigarro logo pela manhã e fumava vários outros ao longo do dia. Seus pulmões começaram a sofrer as consequências do vício, e sua saúde começou a piorar. Ele tossia com frequência e tinha dificuldades para respirar. Mas mesmo com esses problemas de saúde, o mamute não conseguia largar o cigarro. Ele se sentia preso ao vício e acreditava que o tabaco era a única coisa que o mantinha em pé.  '
     }
-    
-    if(fumar === 'Não' && cachorro === 'Sim'){
+
+    if (fumar === 'Não' && cachorro === 'Sim') {
         fumar_message = 'Ele então decidiu viver uma vida mais sossegada, desfrutando das noites de sexta-feira na clareira perto da fogueira com outros animais. O cachorro, um velho conhecido, sempre estava lá, cercado de cadelas e bebidas, e provocava o mamute, dizendo que ele era careta por não agir como ele, e sempre insistia para que o mamute fumasse pelo menos um cigarro. O mamute negava veementemente, dizendo que sua tromba era sensível demais. No entanto, a insistência do cachorro era grande e, eventualmente, o mamute cedeu, pensando consigo mesmo: "Vou fumar só um pouquinho, não vai fazer mal". <br> Roney, o gambá contrabandista de cigarros, conseguiu comprar um pé de jambo, usando todo o dinheiro que o mamute gastava com ele.  '
     }
 
-    if(fumar === 'Não' && cachorro === 'Não' && lobo === 'Sim'){
+    if (fumar === 'Não' && cachorro === 'Não' && lobo === 'Sim') {
         fumar_message = 'Levando a sua vida, o mamute passou a cultivar uma amizade profunda com o lobo, que parecia ser bastante intelectual e amante da leitura. Sempre que se encontravam, o lobo trazia consigo um cachimbo com fumo importado e, nos sábados, optava por ficar mais recluso na penumbra da fogueira apreciando o seu charuto cubano. Max gostava desses momentos, pois ali os dois amigos tinham devaneios e conversavam sobre a vida e seus rumos. A única coisa que incomodava Max era o cheiro forte do charuto. O lobo, percebendo a situação, decidiu que não iria mais fumar na presença do mamute, pois valorizava a amizade dos dois acima de tudo.  '
     }
 
-    if(fumar === 'Não' && cachorro === 'Não' && lobo === 'Não'){
+    if (fumar === 'Não' && cachorro === 'Não' && lobo === 'Não') {
         fumar_message = 'Passou então a levar uma vida solitária, sem cultivar amizades, e seguia seu caminho com passos pesados, deixando uma marca profunda em cada lugar por onde passava. Apesar de nunca ter sido atraído pelo vício do tabaco, preferindo manter seus pulmões livres daquela fumaça tóxica, ele ocasionalmente sentia-se incomodado com a solidão. À noite, quando as estrelas brilhavam no céu e a lua iluminava a escuridão, ouvia os risos e conversas dos outros animais que se reuniam em torno da fogueira e se perguntava se não deveria se juntar a eles. Mas  ele nem mesmo fumava, será que valeria a pena começar a fumar para se aproximar das pessoas. ” Besteiro ! Isso seria tolice, melhor deixar como está” pensou ele, fechando os olhos e adormecendo. '
     }
     document.getElementById("fumarMessage").innerHTML = fumar_message;
@@ -487,31 +485,32 @@ function hs_part4() {
 
 /*Drograr*/
 function hs_part5() {
-    switch (true) {
+    if (drogas === 'Sim' && gato === 'Sim') {
+        drogras_message = 'se droga e é amigo do gato';
+    }
 
-        case (drogas === 'Sim' && gato === 'Sim'):
-            drogras_message = 'se droga e é amigo do gato';
-            break;
+    if (drogas === 'Sim' && gato === 'Não' && leao === 'Sim') {
+        drogras_message = 'se droga e é amigo do leão';
+    }
 
-        case (drogas === 'Sim' && leão === 'Sim'):
-            drogras_message = 'se droga e é amigo do leão';
-            break;
+    if (drogas === 'Sim' && gato === 'Não' && leao === 'Não') {
+        drogras_message = 'se droga e não tem amigos';
+    }
 
-        case (drogas === 'Sim'):
-            drogras_message = 'se droga e não tem amigos';
-            break;
+    if (drogas === 'Não' && gato === 'Sim' && leao === 'Não') {
+        drogras_message = 'Não se drogaa e é amigo do gato';
+    }
 
-        case (gato === 'Sim'):
-            drogras_message = 'Não se drogaa e é amigo do jegue';
-            break;
+    if (drogas === 'Não' && gato === 'Não' && leao === 'Sim') {
+        drogras_message = 'Não se droga e é amigo do leão';
+    }
 
-        case (leão === 'Sim'):
-            drogras_message = 'Não se droga e é amigo do leão';
-            break;
-
-        default:
-            drogras_message = 'não se droga e não tem amigos';
-            break;
+    if (drogas === 'Não' && gato === 'Não' && leao === 'Não') {
+        drogras_message = 'não se droga e não tem amigos';
     }
     document.getElementById("drogasMessage").innerHTML = drogras_message;
 }
+
+
+
+
