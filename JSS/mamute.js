@@ -387,6 +387,42 @@ function hs_part1() {
         voar_message = 'Era uma vez um mamute chamado Max, que nunca havia se interessado em voar. Ele passava seus dias caminhando pela floresta em busca de comida e água para sobreviver. Max era muito solitário e não tinha amigos para conversar ou passar o tempo. Dia após dia, Max seguia a mesma rotina monótona e sem graça. Ele não tinha nada que a animasse e sua vida parecia sem sentido. Ele não sabia o que fazer para mudar sua situação, mas também não tinha a energia ou motivação para tentar algo novo. <br>'
     }
     document.getElementById("voarMessage").innerHTML = voar_message;
+
+    function typeWriter(elemento, callback) {
+        const textoArray = elemento.innerHTML.split('');
+        elemento.innerHTML = '';
+        textoArray.forEach((letra, i) => {
+          setTimeout(() => {
+            elemento.innerHTML += letra;
+            if (i === textoArray.length - 1 && typeof callback === 'function') {
+              callback();
+            }
+          }, 75 * i);
+        });
+      }
+    
+      const voarMessage = document.getElementById('voarMessage');
+      const fumarMessage = document.getElementById('fumarMessage');
+      const beberMessage = document.getElementById('beberMessage');
+      const transarMessage = document.getElementById('transarMessage');
+      const drogasMessage = document.getElementById('drogasMessage');
+    
+      setTimeout(() => {
+        voarMessage.classList.remove('hidden');
+        typeWriter(voarMessage, () => {
+          fumarMessage.classList.remove('hidden');
+          typeWriter(fumarMessage, () => {
+            beberMessage.classList.remove('hidden');
+            typeWriter(beberMessage, () => {
+              transarMessage.classList.remove('hidden');
+              typeWriter(transarMessage, () => {
+                drogasMessage.classList.remove('hidden');
+                typeWriter(drogasMessage);
+              });
+            });
+          });
+        });
+      }, 1000);
 }
 
 
@@ -510,7 +546,3 @@ function hs_part5() {
     }
     document.getElementById("drogasMessage").innerHTML = drogras_message;
 }
-
-
-
-
