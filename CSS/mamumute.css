@@ -1,28 +1,29 @@
 @import url('https://fonts.google.com/specimen/Comfortaa');
 
-*{
-font-family: 'Comfortaa', cursive;
+* {
+  font-family: 'Comfortaa', cursive;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* definir altura total da página para que o conteúdo seja centralizado verticalmente */
-    background-image: url('../IMG/Fundo_historia1.jpg');
-    background-size: cover;
-    
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* definir altura total da página para que o conteúdo seja centralizado verticalmente */
+  background-image: url('../IMG/Fundo_historia1.jpg');
+  background-size: cover;
+
+}
+
 
 fieldset {
-    max-width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    background-color: hwb(0 9% 91% / 0.523);
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    color: #fff;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: hwb(0 9% 91% / 0.523);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
 }
 
 
@@ -30,13 +31,28 @@ fieldset {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   background-color: hwb(0 9% 91% / 0.523);
   padding: 20px;
-    border-radius: 8px;
+  border-radius: 8px;
   display:none;
   position: absolute;
   top: 50px;
   margin-left: 50px;
   margin-right: 50px;
   color: #fff;
-  
-  
+  max-height: 80vh;
+  overflow: scroll;
+}
+
+#history::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+}
+
+#history::-webkit-scrollbar-thumb {
+  background-color: #bb281eec;
+  border-radius: 5px;
+}
+
+#history::-webkit-scrollbar-corner {
+  background-color: transparent;
 }
