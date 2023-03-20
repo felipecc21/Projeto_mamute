@@ -16,7 +16,7 @@ body {
 }
 
 
-fieldset {
+fieldset, #final {
   max-width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   background-color: hwb(0 9% 91% / 0.523);
@@ -40,6 +40,14 @@ fieldset {
   color: #fff;
   max-height: 80vh;
   overflow: scroll;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden2 {
+  display: none;
 }
 
 #history::-webkit-scrollbar {
