@@ -48,6 +48,8 @@ fieldset, #final {
 
 .hidden2 {
   display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 #history::-webkit-scrollbar {

@@ -421,17 +421,31 @@ function hs_part1() {
                         drogasMessage.classList.remove('hidden');
                         typeWriter(drogasMessage);
                         const esconderHistoria = 1;
-console.log(esconderHistoria);
-if(esconderHistoria === 1){
+                        console.log(esconderHistoria);
+                        if (esconderHistoria === 1) {
 
-    setTimeout (function esconderDiv(){
-        var divHistory = document.getElementById("history");
-  divHistory.style.display = "none";
-  var divFinal = document.getElementById("final");
-  divFinal.style.display = "block";
-  
+                            setTimeout(function esconderDiv() {
+                                var divHistory = document.getElementById("history");
+                                divHistory.style.display = "none";
+                                var elemento = document.getElementById("final");
+                                elemento.classList.remove("hidden2");
+                                var opacidade = 0;
+                                var intervalo = setInterval(function () {
+                                    if (opacidade < 1) {
+                                        opacidade += 0.1;
+                                        elemento.style.opacity = opacidade;
+                                    } else {
+                                        clearInterval(intervalo);
+                                    }
+                                }, 100);
 
-    }, 30000 )}
+
+
+
+
+
+                            }, 30000)
+                        }
 
                     });
                 });
@@ -439,15 +453,15 @@ if(esconderHistoria === 1){
         });
     }, 1000);
 
-    
-    
-   
+
+
+
 
 
 }
 
 
-    
+
 
 
 
