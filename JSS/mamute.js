@@ -45,6 +45,10 @@ var amigos_R;
 var amigos_S;
 var amigos_B;
 
+/*Variaveis exibidoras do final*/
+
+
+
 
 
 //Função para exibir texto
@@ -52,6 +56,8 @@ var amigos_B;
 function mostrarHistoria() {
     document.getElementById("history").style.display = "block";
 }
+
+
 
 
 
@@ -65,7 +71,7 @@ function mostrarHistoria() {
 //voar Sim
 function gravarResposta1_S() {
     voar = 'Sim';
-    acao_positiva = 1;
+    acao_positiva = "1";
     document.getElementById('pergunta1').style.display = 'none';
     document.getElementById('pergunta2').style.display = 'block';
     document.querySelector('input[name="resposta1"]:checked').checked = false;
@@ -75,7 +81,7 @@ function gravarResposta1_S() {
 // voar não
 function gravarResposta1_N() {
     voar = 'Não';
-    acao_negativa = 1;
+    acao_negativa = '1';
     document.getElementById('pergunta1').style.display = 'none';
     document.getElementById('pergunta2').style.display = 'block';
     document.querySelector('input[name="resposta1"]:checked').checked = false;
@@ -86,7 +92,7 @@ function gravarResposta1_N() {
 //Fumar sim
 function gravarResposta2_S() {
     fumar = 'Sim';
-    acao_positiva = 2;
+    acao_positiva = '2';
     document.getElementById('pergunta2').style.display = 'none';
     document.getElementById('pergunta3').style.display = 'block';
     document.querySelector('input[name="resposta2"]:checked').checked = false;
@@ -95,7 +101,7 @@ function gravarResposta2_S() {
 //fumar não
 function gravarResposta2_N() {
     fumar = 'Não';
-    acao_negativa = 2;
+    acao_negativa = '2';
     document.getElementById('pergunta2').style.display = 'none';
     document.getElementById('pergunta3').style.display = 'block';
     document.querySelector('input[name="resposta2"]:checked').checked = false;
@@ -104,7 +110,7 @@ function gravarResposta2_N() {
 // beber sim
 function gravarResposta3_S() {
     beber = 'Sim';
-    acao_positiva = 3;
+    acao_positiva = '3';
     document.getElementById('pergunta3').style.display = 'none';
     document.getElementById('pergunta4').style.display = 'block';
     document.querySelector('input[name="resposta3"]:checked').checked = false;
@@ -113,7 +119,7 @@ function gravarResposta3_S() {
 // beber não
 function gravarResposta3_N() {
     beber = 'Não';
-    acao_negativa = 3;
+    acao_negativa = '3';
     document.getElementById('pergunta3').style.display = 'none';
     document.getElementById('pergunta4').style.display = 'block';
     document.querySelector('input[name="resposta3"]:checked').checked = false;
@@ -122,7 +128,7 @@ function gravarResposta3_N() {
 //transar sim
 function gravarResposta4_S() {
     transar = 'Sim';
-    acao_positiva = 4;
+    acao_positiva = '4';
     document.getElementById('pergunta4').style.display = 'none';
     document.getElementById('pergunta5').style.display = 'block';
     document.querySelector('input[name="resposta4"]:checked').checked = false;
@@ -131,7 +137,7 @@ function gravarResposta4_S() {
 //transar não
 function gravarResposta4_N() {
     transar = 'Não';
-    acao_negativa = 4;
+    acao_negativa = '4';
     document.getElementById('pergunta4').style.display = 'none';
     document.getElementById('pergunta5').style.display = 'block';
     document.querySelector('input[name="resposta4"]:checked').checked = false;
@@ -140,7 +146,7 @@ function gravarResposta4_N() {
 // drogras sim
 function gravarResposta5_S() {
     drogas = 'Sim';
-    acao_negativa = 5;
+    acao_negativa = '5';
     document.getElementById('pergunta5').style.display = 'none';
     document.getElementById('pergunta6').style.display = 'block';
     document.querySelector('input[name="resposta5"]:checked').checked = false;
@@ -149,11 +155,11 @@ function gravarResposta5_S() {
 // Drogras não
 function gravarResposta5_N() {
     drogas = 'Não';
-    acao_negativa = 5;
+    acao_negativa = '5';
     document.getElementById('pergunta5').style.display = 'none';
     document.getElementById('pergunta6').style.display = 'block';
     document.querySelector('input[name="resposta5"]:checked').checked = false;
-    console.log(drogas);
+    console.log(acao_negativa);
 }
 
 
@@ -162,7 +168,7 @@ function gravarResposta5_N() {
 //pombinha Sim
 function gravarResposta6_S() {
     pombinha = 'Sim';
-   amigos_R = 1;
+    amigos_R = '1';
     document.getElementById('pergunta6').style.display = 'none';
     document.getElementById('pergunta7').style.display = 'block';
     document.querySelector('input[name="resposta6"]:checked').checked = false;
@@ -171,7 +177,7 @@ function gravarResposta6_S() {
 //pombinha Não
 function gravarResposta6_N() {
     pombinha = 'Não';
-    amigos_S = 1;
+    amigos_S = '1';
     document.getElementById('pergunta6').style.display = 'none';
 
     // Oculta todas as outras perguntas que podem estar na tela
@@ -188,7 +194,7 @@ function gravarResposta6_N() {
 //Cachorro Sim
 function gravarResposta7_S() {
     cachorro = 'Sim';
-    amigos_R = 2;
+    amigos_R = '2';
     document.getElementById('pergunta7').style.display = 'none';
     document.getElementById('pergunta8').style.display = 'block';
     document.querySelector('input[name="resposta7"]:checked').checked = false;
@@ -196,7 +202,7 @@ function gravarResposta7_S() {
 //Cachorro Não
 function gravarResposta7_N() {
     cachorro = 'Não';
-    amigos_S = 2;
+    amigos_S = '2';
     document.getElementById('pergunta6').style.display = 'none';
 
     // Oculta todas as outras perguntas que podem estar na tela
@@ -213,7 +219,7 @@ function gravarResposta7_N() {
 //urso Sim
 function gravarResposta8_S() {
     urso = 'Sim';
-    amigos_R = 3;
+    amigos_R = '3';
     document.getElementById('pergunta8').style.display = 'none';
     document.getElementById('pergunta9').style.display = 'block';
     document.querySelector('input[name="resposta8"]:checked').checked = false;
@@ -221,7 +227,7 @@ function gravarResposta8_S() {
 //Urso Não
 function gravarResposta8_N() {
     urso = 'Não';
-    amigos_S = 3;
+    amigos_S = '3';
     document.getElementById('pergunta6').style.display = 'none';
 
     // Oculta todas as outras perguntas que podem estar na tela
@@ -239,7 +245,7 @@ function gravarResposta8_N() {
 
 function gravarResposta9_S() {
     jegue = 'Sim';
-    amigos_B = 1;
+    amigos_B = '1';
     document.getElementById('pergunta9').style.display = 'none';
     document.getElementById('pergunta10').style.display = 'block';
     document.querySelector('input[name="resposta9"]:checked').checked = false;
@@ -249,7 +255,7 @@ function gravarResposta9_S() {
 
 function gravarResposta9_N() {
     jegue = 'Não';
-    amigos_S = 4;
+    amigos_S = '4';
     document.getElementById('pergunta6').style.display = 'none';
 
     // Oculta todas as outras perguntas que podem estar na tela
@@ -267,7 +273,7 @@ function gravarResposta9_N() {
 
 function gravarResposta10_S() {
     gato = 'Sim';
-    amigos_R = 4;
+    amigos_R = '4';
     document.getElementById('pergunta10').style.display = 'none';
     document.getElementById('pergunta11').style.display = 'none';
     document.querySelector('input[name="resposta10"]:checked').checked = false;
@@ -278,6 +284,7 @@ function gravarResposta10_S() {
     hs_part4();
     hs_part5();
     mostrarHistoria();
+    final_h();
 
 }
 
@@ -285,7 +292,7 @@ function gravarResposta10_S() {
 
 function gravarResposta10_N() {
     gato = 'Não';
-    amigos_S = 5;
+    amigos_S = '5';
     document.getElementById('pergunta6').style.display = 'none';
 
     // Oculta todas as outras perguntas que podem estar na tela
@@ -307,7 +314,7 @@ function gravarResposta10_N() {
 //Aguia Sim
 function gravarResposta11_S() {
     aguia = 'Sim';
-    amigos_B = 2;
+    amigos_B = '2';
     document.getElementById('pergunta11').style.display = 'none';
     document.getElementById('pergunta7').style.display = 'block';
     document.querySelector('input[name="resposta11"]:checked').checked = false;
@@ -315,7 +322,7 @@ function gravarResposta11_S() {
 //Aguia Não
 function gravarResposta11_N() {
     aguia = 'Não';
-    amigos_S = 6;
+    amigos_S = '6';
     document.getElementById('pergunta11').style.display = 'none';
     document.getElementById('pergunta7').style.display = 'block';
     //document.querySelector('input[name="resposta11"]:checked').checked = false;
@@ -323,7 +330,7 @@ function gravarResposta11_N() {
 //lobo sim
 function gravarResposta12_S() {
     lobo = 'Sim';
-    amigos_B = 3;
+    amigos_B = '3';
     document.getElementById('pergunta12').style.display = 'none';
     document.getElementById('pergunta8').style.display = 'block';
     document.querySelector('input[name="resposta12"]:checked').checked = false;
@@ -331,7 +338,7 @@ function gravarResposta12_S() {
 //lobo não
 function gravarResposta12_N() {
     lobo = 'Não';
-    amigos_S = 7;
+    amigos_S = '7';
     document.getElementById('pergunta12').style.display = 'none';
     document.getElementById('pergunta8').style.display = 'block';
     // document.querySelector('input[name="resposta12"]:checked').checked = false;
@@ -339,7 +346,7 @@ function gravarResposta12_N() {
 //buffalo sim
 function gravarResposta13_S() {
     bufalo = 'Sim';
-    amigos_B = 4;
+    amigos_B = '4';
     document.getElementById('pergunta13').style.display = 'none';
     document.getElementById('pergunta9').style.display = 'block';
     document.querySelector('input[name="resposta13"]:checked').checked = false;
@@ -347,7 +354,7 @@ function gravarResposta13_S() {
 //bufalo nao
 function gravarResposta13_N() {
     bufalo = 'Não';
-    amigos_S = 8;
+    amigos_S = '8';
     document.getElementById('pergunta13').style.display = 'none';
     document.getElementById('pergunta9').style.display = 'block';
     document.querySelector('input[name="resposta13"]:checked').checked = false;
@@ -355,7 +362,7 @@ function gravarResposta13_N() {
 //cavalo sim
 function gravarResposta14_S() {
     cavalo = 'Sim';
-    amigos_R = 5;
+    amigos_R = '5';
     document.getElementById('pergunta14').style.display = 'none';
     document.getElementById('pergunta10').style.display = 'block';
     document.querySelector('input[name="resposta14"]:checked').checked = false;
@@ -363,7 +370,7 @@ function gravarResposta14_S() {
 //cavalo nao
 function gravarResposta14_N() {
     cavalo = 'Não';
-    amigos_S = 9;
+    amigos_S = '9';
     document.getElementById('pergunta14').style.display = 'none';
     document.getElementById('pergunta10').style.display = 'block';
     document.querySelector('input[name="resposta14"]:checked').checked = false;
@@ -371,7 +378,7 @@ function gravarResposta14_N() {
 // leao sim
 function gravarResposta15_S() {
     leao = 'Sim';
-    amigos_B = 5;
+    amigos_B = '5';
     document.getElementById('pergunta15').style.display = 'none';
     document.getElementById('pergunta11').style.display = 'none';
     document.querySelector('input[name="resposta15"]:checked').checked = false;
@@ -382,26 +389,31 @@ function gravarResposta15_S() {
     hs_part4();
     hs_part5();
     mostrarHistoria();
+    final_h();
 }
 // leao nao
 function gravarResposta15_N() {
     leao = 'Não';
-    amigos_S = 10;
+    amigos_S = '10';
     document.getElementById('pergunta15').style.display = 'none';
     document.getElementById('pergunta11').style.display = 'none';
     document.querySelector('input[name="resposta15"]:checked').checked = false;
     //window.location.assign("../HTML/mamute_history.html");
+
     hs_part1();
     hs_part2();
     hs_part3();
     hs_part4();
     hs_part5();
     mostrarHistoria();
+    final_h();
 }
 
 
 
 /* Saida de dados*/
+
+
 
 /*Voar com as funçoes para 'digitar' o texto e apresentar o final*/
 function hs_part1() {
@@ -442,6 +454,12 @@ function hs_part1() {
             }, 75 * i);
         });
     }
+
+
+
+
+
+
 
     const voarMessage = document.getElementById('voarMessage');
     const fumarMessage = document.getElementById('fumarMessage');
@@ -492,6 +510,14 @@ function hs_part1() {
             });
         });
     }, 1000);
+
+
+
+
+
+
+
+
 
 
 
@@ -624,3 +650,29 @@ function hs_part5() {
 
 /*Finais da historia*/
 
+
+
+
+function final_h() {
+
+
+    var final_historia = "";
+
+    if (voar === 'Sim' && fumar === 'Sim' && beber === 'Sim' && transar === 'Sim' && drogas === 'Sim') {
+        final_historia = ' Era uma vez um mamute chamado Max que sonhava em voar. Ele passava horas olhando para os pássaros no céu, desejando poder se juntar a eles nas alturas. Um dia, enquanto Max observava os pássaros, uma pombinha pousou em sua tromba. Max ficou surpreso, mas curioso, e começou a conversar com a pombinha. Com o tempo, Max e a pombinha se tornaram amigos inseparáveis. Max contava a ela seus sonhos de voar, enquanto a pombinha lhe ensinava sobre os ventos e as correntes de ar. Max ficava cada vez mais determinado em alcançar seu sonho de voar, e a pombinha o incentivava Um dia, Max decidiu que era hora de tentar voar. Ele se preparou da melhor maneira que pôde, com asas improvisadas de galhos e folhas amarrados às suas costas. A pombinha voou ao seu lado, encorajando-o a tentar. Max correu em direção a um penhasco e saltou, com as asas batendo desesperadamente. Infelizmente, ele não conseguiu decolar e caiu de volta para a terra. O impacto foi tão forte que ficou lesado.';
+    }
+    else {
+        final_historia = 'Final 2'
+    }
+
+
+    console.log('valor da variavel ' + amigos_S);
+    console.log(final_historia);
+    document.getElementById("finalMessage").innerHTML = final_historia;
+}
+
+//Botão de reset
+
+function resetPage() {
+    location.reload();
+}
