@@ -33,7 +33,7 @@ var voar_message;
 var fumar_message;
 var beber_message;
 var transar_message;
-var drogras_message;
+var drogas_message;
 
 var esconderHistoria;
 
@@ -622,29 +622,29 @@ function hs_part4() {
 /*Drograr*/
 function hs_part5() {
     if (drogas === 'Sim' && gato === 'Sim') {
-        drogras_message = 'se droga e é amigo do gato';
+        drogas_message = 'se droga e é amigo do gato';
     }
 
     if (drogas === 'Sim' && gato === 'Não' && leao === 'Sim') {
-        drogras_message = 'se droga e é amigo do leão';
+        drogas_message = 'se droga e é amigo do leão';
     }
 
     if (drogas === 'Sim' && gato === 'Não' && leao === 'Não') {
-        drogras_message = 'se droga e não tem amigos';
+        drogas_message = 'se droga e não tem amigos';
     }
 
-    if (drogas === 'Não' && gato === 'Sim' && leao === 'Não') {
-        drogras_message = 'Não se drogaa e é amigo do gato';
+    if (drogas === 'Não' && gato === 'Sim') {
+        drogas_message = 'Não se droga e é amigo do gato';
     }
 
     if (drogas === 'Não' && gato === 'Não' && leao === 'Sim') {
-        drogras_message = 'Não se droga e é amigo do leão';
+        drogas_message = 'Não se droga e é amigo do leão';
     }
 
     if (drogas === 'Não' && gato === 'Não' && leao === 'Não') {
-        drogras_message = 'não se droga e não tem amigos';
+        drogas_message = 'não se droga e não tem amigos';
     }
-    document.getElementById("drogasMessage").innerHTML = drogras_message;
+    document.getElementById("drogasMessage").innerHTML = drogas_message;
 }
 
 
