@@ -62,8 +62,19 @@ function mostrarHistoria() {
 
 
 
+// Capturando o evento de toque
+document.addEventListener('touchstart', function(event) {
+    // Impedindo o comportamento padrão de bloquear a tela
+    event.preventDefault();
+  });
+
+
+
+
 
 //Funçoes das açoes....
+
+
 
 
 
