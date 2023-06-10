@@ -1,0 +1,38 @@
+Bugs:
+
+O final é apresentado antes da historia ser contada. Se  o final é curto, o final é apresentado corretamente. 
+1:35 -- Corrijido
+
+- Ao clicar muito rapido as perguntas ficam selecionaveis
+
+
+A barra de rolagem não acompanha o texto
+
+// Verificar ajuste na linha 487
+
+
+Retirar os console log
+
+
+Melhorias:
+
+O final pode ser apresentado como a história. 
+Trasiçao do cenario 1, entre "Amor" e "Drogas" não está legal. 
+
+Comprimir imagem de background, para melhor carregamento.
+
+Bufalo Nao
+
+Erros do texto:
+
+Urso tentou ajudá-lo
+Encontrou alguém especial
+Não bebia ha muitos anos
+Tom ficou nervo ( coreecao, ele ficou tenso
+
+Ideias:
+
+Vincular as escolhas a um formulario do forms.
+Registrar os valor dos console log ém uma unica variavel
+
+Mudar favicon padrão

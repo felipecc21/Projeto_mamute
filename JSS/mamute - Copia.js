@@ -353,19 +353,12 @@ function gravarResposta13_S() {
     document.querySelector('input[name="resposta13"]:checked').checked = false;
 }
 //bufalo nao
-/*function gravarResposta13_N() {
-    bufalo = 'Não';
-    amigos_S = '8';
-    document.getElementById('pergunta13').style.display = 'none';
-    document.getElementById('pergunta9').style.display = 'block';
-    document.querySelector('input[name="resposta13"]:checked').checked = false;
-}*/
 function gravarResposta13_N() {
     bufalo = 'Não';
     amigos_S = '8';
     document.getElementById('pergunta13').style.display = 'none';
     document.getElementById('pergunta9').style.display = 'block';
-    document.querySelector('input[name="resposta14"]:checked').checked = false;
+    document.querySelector('input[name="resposta13"]:checked').checked = false;
 }
 //cavalo sim
 function gravarResposta14_S() {
@@ -381,7 +374,7 @@ function gravarResposta14_N() {
     amigos_S = '9';
     document.getElementById('pergunta14').style.display = 'none';
     document.getElementById('pergunta10').style.display = 'block';
-    document.querySelector('input[name="resposta15"]:checked').checked = false;
+    document.querySelector('input[name="resposta14"]:checked').checked = false;
 }
 // leao sim
 function gravarResposta15_S() {
@@ -405,7 +398,7 @@ function gravarResposta15_N() {
     amigos_S = '10';
     document.getElementById('pergunta15').style.display = 'none';
     document.getElementById('pergunta11').style.display = 'none';
-    document.querySelector('input[name="resposta16"]:checked').checked = false;
+    document.querySelector('input[name="resposta15"]:checked').checked = false;
     //window.location.assign("../HTML/mamute_history.html");
 
     hs_part1();
@@ -455,51 +448,50 @@ function hs_part1() {
         const textoArray = elemento.innerHTML.split('');
         elemento.innerHTML = '';
         textoArray.forEach((letra, i) => {
-          setTimeout(() => {
-            elemento.innerHTML += letra;
-            scrollToBottom(); 
-            if (i === textoArray.length - 1 && typeof callback === 'function') {
-              callback();
-            }
-          }, 65 * i);
+            setTimeout(() => {
+                elemento.innerHTML += letra;
+                if (i === textoArray.length - 1 && typeof callback === 'function') {
+                    callback();
+                    
+                }
+            }, 85 * i);
         });
-      }
-      
-      function scrollToBottom() {
-        var historyDiv = document.getElementById("history");
-        historyDiv.scrollTop = historyDiv.scrollHeight;
-      }
+    }
+
+
+
+
+
 
 
     const voarMessage = document.getElementById('voarMessage');
-const fumarMessage = document.getElementById('fumarMessage');
-const beberMessage = document.getElementById('beberMessage');
-const transarMessage = document.getElementById('transarMessage');
-const drogasMessage = document.getElementById('drogasMessage');
+    const fumarMessage = document.getElementById('fumarMessage');
+    const beberMessage = document.getElementById('beberMessage');
+    const transarMessage = document.getElementById('transarMessage');
+    const drogasMessage = document.getElementById('drogasMessage');
 
-setTimeout(() => {
-    voarMessage.classList.remove('hidden');
-    typeWriter(voarMessage, () => {
-        fumarMessage.classList.remove('hidden');
-        typeWriter(fumarMessage, () => {
-            beberMessage.classList.remove('hidden');
-            typeWriter(beberMessage, () => {
-                transarMessage.classList.remove('hidden');
-                typeWriter(transarMessage, () => {
-                    drogasMessage.classList.remove('hidden');
-                    typeWriter(drogasMessage, () => {
+    setTimeout(() => {
+        voarMessage.classList.remove('hidden');
+        typeWriter(voarMessage, () => {
+            fumarMessage.classList.remove('hidden');
+            typeWriter(fumarMessage, () => {
+                beberMessage.classList.remove('hidden');
+                typeWriter(beberMessage, () => {
+                    transarMessage.classList.remove('hidden');
+                    typeWriter(transarMessage, () => {
+                        drogasMessage.classList.remove('hidden');
+                        typeWriter(drogasMessage);
                         const esconderHistoria = 1;
                         console.log(esconderHistoria);
                         if (esconderHistoria === 1) {
-                            const tempoEspera = 6 * drogasMessage.innerHTML.length;
 
-                            setTimeout(() => {
+                            setTimeout(function esconderDiv() {
                                 var divHistory = document.getElementById("history");
                                 divHistory.style.display = "none";
                                 var elemento = document.getElementById("final");
                                 elemento.classList.remove("hidden2");
                                 var opacidade = 0;
-                                var intervalo = setInterval(() => {
+                                var intervalo = setInterval(function () {
                                     if (opacidade < 1) {
                                         opacidade += 0.1;
                                         elemento.style.opacity = opacidade;
@@ -507,14 +499,20 @@ setTimeout(() => {
                                         clearInterval(intervalo);
                                     }
                                 }, 100);
-                            }, tempoEspera);
+
+
+
+
+
+
+                            }, 98000)
                         }
+
                     });
                 });
             });
         });
-    });
-}, 1000);
+    }, 1000);
 
 
 
