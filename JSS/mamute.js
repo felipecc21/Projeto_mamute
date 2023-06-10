@@ -63,10 +63,10 @@ function mostrarHistoria() {
 
 
 // Capturando o evento de toque
-document.addEventListener('touchstart', function(event) {
+document.addEventListener('touchstart', function (event) {
     // Impedindo o comportamento padrão de bloquear a tela
     event.preventDefault();
-  });
+});
 
 
 
@@ -457,7 +457,7 @@ function hs_part1() {
                 if (i === textoArray.length - 1 && typeof callback === 'function') {
                     callback();
                 }
-            }, 30 * i);
+            }, 1 * i);
         });
     }
 
@@ -504,11 +504,14 @@ function hs_part1() {
                                     divHistory.style.display = "none";
                                     var elemento = document.getElementById("final");
                                     elemento.classList.remove("hidden2");
+                                    var elementoimagens = document.getElementById("imagens");
+                                    elementoimagens.classList.remove("hidden2");
                                     var opacidade = 0;
                                     var intervalo = setInterval(() => {
                                         if (opacidade < 1) {
                                             opacidade += 0.1;
                                             elemento.style.opacity = opacidade;
+                                            elementoimagens.style.opacity = opacidade;
                                         } else {
                                             clearInterval(intervalo);
                                         }
@@ -521,6 +524,7 @@ function hs_part1() {
             });
         });
     }, 1000);
+
 
 
 

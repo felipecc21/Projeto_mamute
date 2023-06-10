@@ -61,22 +61,11 @@ fieldset {
   overflow: scroll;
   bottom: calc(50vh - 40px);
   text-align: center;
-  z-index: 9999;
   margin-bottom: 5px;
 
 }
 
-.imagens-container img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 15px;
-  display: flex;
-  z-index: 5;
-  margin-top: 35vh;
-}
-
-
-/*#imagens img {
+#img {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -84,12 +73,12 @@ fieldset {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  /*width: 100px;*/
+  height: 100px;
+  margin: auto;
   z-index: 9999;
-  margin-left: 20px;
-  margin-right: 20px;
   
-}*/
+}
 
 .hidden2 {
   display: none;

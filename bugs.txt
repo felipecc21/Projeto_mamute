@@ -1,11 +1,11 @@
 Bugs:
 
 A barra de rolagem fica sempre acopnahando e não permite que o usuario a role para cima caso o usuario queira. 
-
-
- EM dispositivos moveis a fonte não se adpta, talvez seja nessesarrio importar a fonte direto no projeto. 
+ 
 AInda em dispositivos moveis, o mesmo fica bloqueando a tela enquanto o texto é apresentado 
 
+
+Tamanho da fonte, responsivo
 
 Melhorias:
 
