@@ -1,17 +1,6 @@
 Bugs:
 
-O final é apresentado antes da historia ser contada. Se  o final é curto, o final é apresentado corretamente. 
-1:35 -- Corrijido
 
-- Ao clicar muito rapido as perguntas ficam selecionaveis
-
-
-A barra de rolagem não acompanha o texto
-
-// Verificar ajuste na linha 487
-
-
-Retirar os console log
 
 
 Melhorias:

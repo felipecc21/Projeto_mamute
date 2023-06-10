@@ -76,8 +76,6 @@ function gravarResposta1_S() {
     document.getElementById('pergunta1').style.display = 'none';
     document.getElementById('pergunta2').style.display = 'block';
     document.querySelector('input[name="resposta1"]:checked').checked = false;
-    console.log(voar);
-
 }
 // voar não
 function gravarResposta1_N() {
@@ -86,9 +84,6 @@ function gravarResposta1_N() {
     document.getElementById('pergunta1').style.display = 'none';
     document.getElementById('pergunta2').style.display = 'block';
     document.querySelector('input[name="resposta1"]:checked').checked = false;
-    console.log(voar);
-
-
 }
 //Fumar sim
 function gravarResposta2_S() {
@@ -97,7 +92,6 @@ function gravarResposta2_S() {
     document.getElementById('pergunta2').style.display = 'none';
     document.getElementById('pergunta3').style.display = 'block';
     document.querySelector('input[name="resposta2"]:checked').checked = false;
-    console.log(fumar);
 }
 //fumar não
 function gravarResposta2_N() {
@@ -106,7 +100,6 @@ function gravarResposta2_N() {
     document.getElementById('pergunta2').style.display = 'none';
     document.getElementById('pergunta3').style.display = 'block';
     document.querySelector('input[name="resposta2"]:checked').checked = false;
-    console.log(fumar);
 }
 // beber sim
 function gravarResposta3_S() {
@@ -115,7 +108,6 @@ function gravarResposta3_S() {
     document.getElementById('pergunta3').style.display = 'none';
     document.getElementById('pergunta4').style.display = 'block';
     document.querySelector('input[name="resposta3"]:checked').checked = false;
-    console.log(beber);
 }
 // beber não
 function gravarResposta3_N() {
@@ -124,7 +116,6 @@ function gravarResposta3_N() {
     document.getElementById('pergunta3').style.display = 'none';
     document.getElementById('pergunta4').style.display = 'block';
     document.querySelector('input[name="resposta3"]:checked').checked = false;
-    console.log(beber);
 }
 //transar sim
 function gravarResposta4_S() {
@@ -133,7 +124,6 @@ function gravarResposta4_S() {
     document.getElementById('pergunta4').style.display = 'none';
     document.getElementById('pergunta5').style.display = 'block';
     document.querySelector('input[name="resposta4"]:checked').checked = false;
-    console.log(transar);
 }
 //transar não
 function gravarResposta4_N() {
@@ -142,7 +132,6 @@ function gravarResposta4_N() {
     document.getElementById('pergunta4').style.display = 'none';
     document.getElementById('pergunta5').style.display = 'block';
     document.querySelector('input[name="resposta4"]:checked').checked = false;
-    console.log(transar);
 }
 // drogras sim
 function gravarResposta5_S() {
@@ -151,7 +140,6 @@ function gravarResposta5_S() {
     document.getElementById('pergunta5').style.display = 'none';
     document.getElementById('pergunta6').style.display = 'block';
     document.querySelector('input[name="resposta5"]:checked').checked = false;
-    console.log(drogas);
 }
 // Drogras não
 function gravarResposta5_N() {
@@ -160,7 +148,6 @@ function gravarResposta5_N() {
     document.getElementById('pergunta5').style.display = 'none';
     document.getElementById('pergunta6').style.display = 'block';
     document.querySelector('input[name="resposta5"]:checked').checked = false;
-    console.log(acao_negativa);
 }
 
 
@@ -173,7 +160,6 @@ function gravarResposta6_S() {
     document.getElementById('pergunta6').style.display = 'none';
     document.getElementById('pergunta7').style.display = 'block';
     document.querySelector('input[name="resposta6"]:checked').checked = false;
-    console.log(pombinha);
 }
 //pombinha Não
 function gravarResposta6_N() {
@@ -190,7 +176,6 @@ function gravarResposta6_N() {
     // Mostra a pergunta 
     document.getElementById('pergunta11').style.display = 'block';
     document.querySelector('input[name="resposta6"]:checked').checked = false;
-    console.log(pombinha);
 }
 //Cachorro Sim
 function gravarResposta7_S() {
@@ -427,7 +412,7 @@ function gravarResposta15_N() {
 function hs_part1() {
     if (voar === 'Sim' && pombinha === 'Sim') {
         voar_message = 'Era uma vez um mamute chamado Max, que sonhava em voar. Ele passava horas olhando para os pássaros no céu, desejando poder se juntar a eles nas alturas. Um dia, enquanto Max observava os pássaros, uma pombinha pousou em sua tromba. Max ficou surpreso, mas curioso, e começou a conversar com a pombinha. Com o tempo, Max e a pombinha se tornaram amigos inseparáveis. Max contava a ela seus sonhos de voar, enquanto a pombinha lhe ensinava sobre os ventos e as correntes de ar. Max ficava cada vez mais determinado em alcançar seu sonho de voar, e a pombinha o incentivava. Um dia, Max decidiu que era hora de tentar voar. Ele se preparou da melhor maneira que pôde, com asas improvisadas de galhos e folhas amarrados às suas costas. A pombinha voou ao seu lado, encorajando-o a tentar. Max correu em direção a um penhasco e saltou, com as asas batendo desesperadamente. Infelizmente, ele não conseguiu decolar e caiu de volta para a terra. O impacto foi tão forte que ele ficou lesionado.'
-        
+
     }
 
     if (voar === 'Sim' && pombinha === 'Não' && aguia === 'Sim') {
@@ -455,66 +440,76 @@ function hs_part1() {
         const textoArray = elemento.innerHTML.split('');
         elemento.innerHTML = '';
         textoArray.forEach((letra, i) => {
-          setTimeout(() => {
-            elemento.innerHTML += letra;
-            scrollToBottom(); 
-            if (i === textoArray.length - 1 && typeof callback === 'function') {
-              callback();
-            }
-          }, 65 * i);
+            setTimeout(() => {
+                elemento.innerHTML += letra;
+                scrollToBottom();
+                if (i === textoArray.length - 1 && typeof callback === 'function') {
+                    callback();
+                }
+            }, 30 * i);
         });
-      }
-      
-      function scrollToBottom() {
+    }
+
+    function scrollToBottom() {
         var historyDiv = document.getElementById("history");
+        var isScrolledToBottom = historyDiv.scrollHeight - historyDiv.clientHeight <= historyDiv.scrollTop + 1;
+
         historyDiv.scrollTop = historyDiv.scrollHeight;
-      }
+
+        if (!isScrolledToBottom) {
+            historyDiv.onscroll = function () {
+                if (historyDiv.scrollTop === historyDiv.scrollHeight - historyDiv.clientHeight) {
+                    historyDiv.onscroll = null;
+                }
+            };
+        }
+    }
+
 
 
     const voarMessage = document.getElementById('voarMessage');
-const fumarMessage = document.getElementById('fumarMessage');
-const beberMessage = document.getElementById('beberMessage');
-const transarMessage = document.getElementById('transarMessage');
-const drogasMessage = document.getElementById('drogasMessage');
+    const fumarMessage = document.getElementById('fumarMessage');
+    const beberMessage = document.getElementById('beberMessage');
+    const transarMessage = document.getElementById('transarMessage');
+    const drogasMessage = document.getElementById('drogasMessage');
 
-setTimeout(() => {
-    voarMessage.classList.remove('hidden');
-    typeWriter(voarMessage, () => {
-        fumarMessage.classList.remove('hidden');
-        typeWriter(fumarMessage, () => {
-            beberMessage.classList.remove('hidden');
-            typeWriter(beberMessage, () => {
-                transarMessage.classList.remove('hidden');
-                typeWriter(transarMessage, () => {
-                    drogasMessage.classList.remove('hidden');
-                    typeWriter(drogasMessage, () => {
-                        const esconderHistoria = 1;
-                        console.log(esconderHistoria);
-                        if (esconderHistoria === 1) {
-                            const tempoEspera = 6 * drogasMessage.innerHTML.length;
+    setTimeout(() => {
+        voarMessage.classList.remove('hidden');
+        typeWriter(voarMessage, () => {
+            fumarMessage.classList.remove('hidden');
+            typeWriter(fumarMessage, () => {
+                beberMessage.classList.remove('hidden');
+                typeWriter(beberMessage, () => {
+                    transarMessage.classList.remove('hidden');
+                    typeWriter(transarMessage, () => {
+                        drogasMessage.classList.remove('hidden');
+                        typeWriter(drogasMessage, () => {
+                            const esconderHistoria = 1;
+                            if (esconderHistoria === 1) {
+                                const tempoEspera = 6 * drogasMessage.innerHTML.length;
 
-                            setTimeout(() => {
-                                var divHistory = document.getElementById("history");
-                                divHistory.style.display = "none";
-                                var elemento = document.getElementById("final");
-                                elemento.classList.remove("hidden2");
-                                var opacidade = 0;
-                                var intervalo = setInterval(() => {
-                                    if (opacidade < 1) {
-                                        opacidade += 0.1;
-                                        elemento.style.opacity = opacidade;
-                                    } else {
-                                        clearInterval(intervalo);
-                                    }
-                                }, 100);
-                            }, tempoEspera);
-                        }
+                                setTimeout(() => {
+                                    var divHistory = document.getElementById("history");
+                                    divHistory.style.display = "none";
+                                    var elemento = document.getElementById("final");
+                                    elemento.classList.remove("hidden2");
+                                    var opacidade = 0;
+                                    var intervalo = setInterval(() => {
+                                        if (opacidade < 1) {
+                                            opacidade += 0.1;
+                                            elemento.style.opacity = opacidade;
+                                        } else {
+                                            clearInterval(intervalo);
+                                        }
+                                    }, 100);
+                                }, tempoEspera);
+                            }
+                        });
                     });
                 });
             });
         });
-    });
-}, 1000);
+    }, 1000);
 
 
 
@@ -537,7 +532,7 @@ function hs_part2() {
 
     if (fumar === 'Sim' && cachorro === 'Sim') {
         fumar_message = 'Ele passou então a morar em uma caverna e era assombrado por um desejo estranho: fumar um cigarro. Certo dia, ele encontrou um cachorro perdido em sua caverna e os dois se tornaram amigos rapidamente. O cachorro, sendo um bicho esperto e conhecedor das vielas da cidade, conseguiu juntar uma pilha de bitucas de cigarro para Max. Com uma fita, ele fixou as bitucas na ponta da tromba do mamute e disse: "Agora é só chegar perto da fogueira e puxar com força". Max seguiu o conselho do cachorro e deu uma tragada, sentindo um breve êxtase que foi seguido de tosse e engasgo. O cachorro, parecendo mais uma hiena naquele momento, gargalhou da situação do amigo mamute. Desde então, Max foi apelidado de Max cinzeiro. Há boatos de que ele teve problemas de saúde depois daquele dia.'
-        
+
     }
 
     if (fumar === 'Sim' && cachorro === 'Não' && lobo === 'Sim') {
@@ -629,7 +624,7 @@ function hs_part4() {
 function hs_part5() {
     if (drogas === 'Sim' && gato === 'Sim') {
         drogas_message = 'Max, que nunca havia experimentado a tal da erva antes. Ele ouvia falar dos benefícios que ela poderia trazer à saúde e o quanto poderia ser divertida. Max ficava curioso e queria muito experimentá-la. Um dia, ele se aproximou de um conhecido, um gato chamado Tom, e perguntou se ele poderia conseguir erva para ele. Tom, percebendo uma oportunidade de ganhar dinheiro fácil, pegou o dinheiro de Max e prometeu trazer a erva em breve. Mas Tom não tinha nenhuma intenção de realmente comprar erva para Max. Ele foi até o pasto pegar um pouco de esterco de vaca seco e colocou num saquinho e entregou para Max.  Max achou o sabor e a sensação maravilhosa e queria mais. Tom viu uma oportunidade de ganhar ainda mais dinheiro e começou a vender "erva" para ele regularmente. Max ficou viciado naquilo e continuava comprando, mesmo quando outros animais começaram a rir dele e a chamá-lo de "esterquinho". Um dia, Max viu Tom na rua e o chamou para conversar. Tom ficou nervoso, pensando que o mamute havia descoberto a verdade sobre a "erva". Mas, para sua surpresa, Max queria apenas mais "erva". Finalmente, outro animal decidiu contar a Max a verdade sobre a "erva". Max ficou envergonhado e traído. Ele percebeu que tinha confiado cegamente em Tom e que havia sido enganado. Max decidiu que era hora de ser mais cuidadoso com as pessoas em quem confiava e com as decisões que tomava. Há quem diga que depois disso ele foi visto algumas vezes no pasto pegando esterco, mas a dona tamanduá sempre teve a língua grande, então não sei se pode-se acreditar nisso.';
-        
+
     }
 
     if (drogas === 'Sim' && gato === 'Não' && leao === 'Sim') {
@@ -681,7 +676,6 @@ function final_h() {
         final_historia = 'Max é um habilidoso equilibrista que caminha sobre a corda da vida há anos. Entre os polos do sim e do não, ele oscila, enfrentando os desafios e as incertezas que o destino lhe apresenta. Como qualquer criatura neste vasto mundo, desde a pequena formiga até o majestoso leão das montanhas, todos estão suscetíveis aos temores e receios da existência, bem como às alegrias e prazeres que ela proporciona. Max compreende a impermanência intrínseca a todas as coisas. Sabe que tudo se transforma e está em constante movimento. No fundo, de sua alma, ele sente que sua própria existência é apenas um grão de areia em um vasto deserto. Talvez, daqui a muitos e muitos anos, esse insignificante grãozinho possa se transformar em vidro, integrando um magnífico vitral adornando uma catedral em alguma distante capital. Contudo, há também a possibilidade de que esse grão simplesmente se perca no ar, desvanecendo-se na imensidão do tempo. No entanto, ponderar demasiadamente sobre essas questões poderia desequilibrar Max e levá-lo à queda. A verdade é que a corda que ele percorre está chegando ao seu fim, e mais uma vez suas pernas tremem diante dessa inevitabilidade. O destino final, a morte, paira como uma sombra constante, lembrando-o de que todos os equilibristas eventualmente descem de suas cordas. Assim, Max segue adiante, encarando cada passo com coragem e determinação. Ele dança na corda da vida, abraçando os momentos fugazes de felicidade e enfrentando os desafios com bravura. E quando, enfim, o último passo for dado e a corda se romper, ele encontrará a paz no abraço sereno do destino.';
     }
 
-    console.log(final_historia);
     document.getElementById("finalMessage").innerHTML = final_historia;
 }
 

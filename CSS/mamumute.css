@@ -52,7 +52,7 @@ fieldset {
   margin-right: 50px;
   color: #fff;
   max-height: 80vh;
-  overflow: auto;
+  overflow: scroll;
 
 
 }
@@ -122,6 +122,8 @@ fieldset {
   transition: opacity 3s ease-in-out;
 }
 
+/*Barra de rolaegem*/
+
 #history::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -136,3 +138,15 @@ fieldset {
 #history::-webkit-scrollbar-corner {
   background-color: transparent;
 }
+
+
+/*Bloquear seleção de texto*/
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
