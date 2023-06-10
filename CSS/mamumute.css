@@ -1,7 +1,10 @@
-@import url('https://fonts.google.com/specimen/Comfortaa');
+@font-face {
+  font-family: 'Kalam';
+  src: url('../FONT/Comfortaa-VariableFont_wght.ttf') format('truetype');
+}
 
 * {
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Kalam', cursive;
 }
 
 body {
@@ -39,6 +42,7 @@ fieldset {
   color: #fff;
   max-height: 80vh;
   overflow: scroll;
+  text-align: center;
 }
 
 #final {

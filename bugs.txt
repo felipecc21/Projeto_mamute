@@ -1,16 +1,24 @@
 Bugs:
 
+A barra de rolagem fica sempre acopnahando e não permite que o usuario a role para cima caso o usuario queira. 
 
+
+ EM dispositivos moveis a fonte não se adpta, talvez seja nessesarrio importar a fonte direto no projeto. 
+AInda em dispositivos moveis, o mesmo fica bloqueando a tela enquanto o texto é apresentado 
 
 
 Melhorias:
 
-O final pode ser apresentado como a história. 
-Trasiçao do cenario 1, entre "Amor" e "Drogas" não está legal. 
+Substituir "Trasar" por "Amar", pelo menos na pergunta. 
+
+Melhorar apresentação do final.
+
+
+Trasiçao entre "Amor" e "Drogas" não está legal. 
 
 Comprimir imagem de background, para melhor carregamento.
 
-Bufalo Nao
+
 
 Erros do texto:
 
