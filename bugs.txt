@@ -1,21 +1,18 @@
 Bugs:
 
-*Tirar velocidade rapida, colocada afim de testes. Velocidade ideal é de 60 - 65.
+*Tirar velocidade rapida, colocada afim de testes. Velocidade ideal é de 60 - 65 -- 75. ( 65 * i )
+*em fase de teste o ideal é 1.
  
 AInda em dispositivos moveis, o mesmo fica bloqueando a tela enquanto o texto é apresentado 
+-- Uma alternativa para isso, seria usar o código para simular um toque ou clique.
 
 
 Tamanho da fonte, responsivo
 
 Melhorias:
 
+Forms: Indentificar o navegador do usuario
  
-
-Melhorar apresentação do final.-- Imagem ajustada.
-Adicionar fade-in ao fieldset final e ao texto, de modo que primeiro venha o fieldset e depois o texto.
-
-Colocar botao de reset sobre a imagem final na parte inferior a direita.
-Adicionar icon de feedback, na parte inferior a esquerda sobre a imagem final 
 
 
 Trasiçao entre "Amor" e "Drogas" não está legal. 
@@ -33,7 +30,7 @@ Tom ficou nervo ( coreecao, ele ficou tenso
 
 Ideias:
 
-Vincular as escolhas a um formulario do forms.
+**Vincular as escolhas a um formulario do forms. (Inviavel no momento)
 Registrar os valor dos console log ém uma unica variavel
 
 Mudar favicon padrão

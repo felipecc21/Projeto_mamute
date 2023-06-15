@@ -464,6 +464,7 @@ function hs_part1() {
     function scrollToBottom() {
         var historyDiv = document.getElementById("history");
         var isScrolledToBottom = historyDiv.scrollHeight - historyDiv.clientHeight <= historyDiv.scrollTop + 1;
+     
 
         historyDiv.scrollTop = historyDiv.scrollHeight;
 
@@ -474,6 +475,8 @@ function hs_part1() {
                 }
             };
         }
+
+
     }
 
 
@@ -484,7 +487,11 @@ function hs_part1() {
     const transarMessage = document.getElementById('transarMessage');
     const drogasMessage = document.getElementById('drogasMessage');
 
+    
+
     setTimeout(() => {
+
+    
         voarMessage.classList.remove('hidden');
         typeWriter(voarMessage, () => {
             fumarMessage.classList.remove('hidden');
@@ -638,12 +645,12 @@ function hs_part4() {
 /*Drograr*/
 function hs_part5() {
     if (drogas === 'Sim' && gato === 'Sim') {
-        drogas_message = 'Max, que nunca havia experimentado a tal da erva antes. Ele ouvia falar dos benefícios que ela poderia trazer à saúde e o quanto poderia ser divertida. Max ficava curioso e queria muito experimentá-la. Um dia, ele se aproximou de um conhecido, um gato chamado Tom, e perguntou se ele poderia conseguir erva para ele. Tom, percebendo uma oportunidade de ganhar dinheiro fácil, pegou o dinheiro de Max e prometeu trazer a erva em breve. Mas Tom não tinha nenhuma intenção de realmente comprar erva para Max. Ele foi até o pasto pegar um pouco de esterco de vaca seco e colocou num saquinho e entregou para Max.  Max achou o sabor e a sensação maravilhosa e queria mais. Tom viu uma oportunidade de ganhar ainda mais dinheiro e começou a vender "erva" para ele regularmente. Max ficou viciado naquilo e continuava comprando, mesmo quando outros animais começaram a rir dele e a chamá-lo de "esterquinho". Um dia, Max viu Tom na rua e o chamou para conversar. Tom ficou nervoso, pensando que o mamute havia descoberto a verdade sobre a "erva". Mas, para sua surpresa, Max queria apenas mais "erva". Finalmente, outro animal decidiu contar a Max a verdade sobre a "erva". Max ficou envergonhado e traído. Ele percebeu que tinha confiado cegamente em Tom e que havia sido enganado. Max decidiu que era hora de ser mais cuidadoso com as pessoas em quem confiava e com as decisões que tomava. Há quem diga que depois disso ele foi visto algumas vezes no pasto pegando esterco, mas a dona tamanduá sempre teve a língua grande, então não sei se pode-se acreditar nisso.';
+        drogas_message = 'Ele já estava mais velho e um pouco calejado pela vida, mas nunca havia experimentado a tal da erva antes. Ele ouvia falar dos benefícios que ela poderia trazer à saúde e o quanto poderia ser divertida. Max ficava curioso e queria muito experimentá-la.  Um dia, ele se aproximou de um conhecido, um gato chamado Tom, e perguntou se ele poderia conseguir erva para ele. Tom, percebendo uma oportunidade de ganhar dinheiro fácil, pegou o dinheiro de Max e prometeu trazer a erva em breve. Mas Tom não tinha nenhuma intenção de realmente comprar erva para Max. Ele foi até o pasto pegar um pouco de esterco de vaca seco e colocou num saquinho e entregou para Max.  Max achou o sabor e a sensação maravilhosa e queria mais. Tom viu uma oportunidade de ganhar ainda mais dinheiro e começou a vender "erva" para ele regularmente. Max ficou viciado naquilo e continuava comprando, mesmo quando outros animais começaram a rir dele e a chamá-lo de "esterquinho".  Um dia, Max viu Tom na rua e o chamou para conversar. Tom ficou nervoso, pensando que o mamute havia descoberto a verdade sobre a "erva". Mas, para sua surpresa, Max queria apenas mais "erva".  Finalmente, outro animal decidiu contar a Max a verdade sobre a "erva". Max ficou envergonhado e traído. Ele percebeu que tinha confiado cegamente em Tom e que havia sido enganado. Max decidiu que era hora de ser mais cuidadoso com as pessoas em quem confiava e com as decisões que tomava. Há quem diga que depois disso ele foi visto algumas vezes no pasto pegando esterco, mas a dona tamanduá sempre teve a língua grande, então não sei se pode-se acreditar nisso.';
 
     }
 
     if (drogas === 'Sim' && gato === 'Não' && leao === 'Sim') {
-        drogas_message = 'Max, sempre teve curiosidade em experimentar erva. Ele ouvia seus amigos falarem sobre a sensação de prazer que sentiam ao fumar, como se fosse algo mágico e irresistível. Max sabia que era ilegal e perigoso, mas sua curiosidade era maior do que qualquer coisa. Um dia, Max tomou coragem e perguntou a seu amigo Leão se ele poderia ajudá-lo a conseguir um pouco de erva. Mas Leão foi totalmente contra a ideia e disse a Max que isso era um crime e que ele poderia acabar se machucando ou sendo preso. Leão até mesmo ameaçou denunciar Max ao inspetor Fuinha, se ele continuasse com aquela ideia maluca. Max ficou confuso e desapontado com a atitude do amigo, mas, ao mesmo tempo, entendeu que ele só estava tentando protegê-lo. Ele decidiu não experimentar a tal da erva, mas também decidiu se afastar de Leão, pois sentiu que ele não o entendia. Com o tempo, Max percebeu que havia outras coisas na vida que poderiam lhe trazer prazer e satisfação, e que ele não precisava arriscar sua vida e sua liberdade devido a uma curiosidade. Ele também percebeu que Leão só estava tentando protegê-lo e que ele era um amigo leal, mesmo que às vezes parecesse duro demais. Assim, Max seguiu sua vida, sem nunca ter experimentado erva, mas com a dúvida se havia feito a escolha certa.';
+        drogas_message = 'Apesar de já ser um adulto e ter expectativas alinhadas a essa fase, ele sempre teve curiosidade em experimentar erva. Ele ouvia seus amigos falarem sobre a sensação de prazer que sentiam ao fumar, como se fosse algo mágico e irresistível. Max sabia que era ilegal e perigoso, mas sua curiosidade era maior do que qualquer coisa. Um dia, Max tomou coragem e perguntou a seu amigo Leão se ele poderia ajudá-lo a conseguir um pouco de erva. Mas Leão foi totalmente contra a ideia e disse a Max que isso era um crime e que ele poderia acabar se machucando ou sendo preso. Leão até mesmo ameaçou denunciar Max ao inspetor Fuinha, se ele continuasse com aquela ideia maluca. Max ficou confuso e desapontado com a atitude do amigo, mas, ao mesmo tempo, entendeu que ele só estava tentando protegê-lo. Ele decidiu não experimentar a tal da erva, mas também decidiu se afastar de Leão, pois sentiu que ele não o entendia. Com o tempo, Max percebeu que havia outras coisas na vida que poderiam lhe trazer prazer e satisfação, e que ele não precisava arriscar sua vida e sua liberdade devido a uma curiosidade. Ele também percebeu que Leão só estava tentando protegê-lo e que ele era um amigo leal, mesmo que às vezes parecesse duro demais.  Assim, Max seguiu sua vida, sem nunca ter experimentado erva, mas com a dúvida se havia feito a escolha certa.';
     }
 
     if (drogas === 'Sim' && gato === 'Não' && leao === 'Não') {
@@ -651,7 +658,7 @@ function hs_part5() {
     }
 
     if (drogas === 'Não' && gato === 'Sim') {
-        drogas_message = 'Max nunca foi tentado a experimentar qualquer tipo de droga, ele pensava que a verdadeira liberdade e realização não provinha delas, pensava que se elas fossem se manifestar, iria vir de dentro, da alma. Na turma de Max tinha um gato, que chamava Felix, ele era bem esperto e inteligente, era disputado pelos times de queimada da escola, pois o bicho era capaz de desviar da bola mais fugaz, ter ele no time era quase a certeza de ganhar, diferente de Max, que sempre fora grande e desajeitado.  Anos depois, Max reencontrou Felix, sua situação era decadente, seus olhos antes brilhantes agora eram opacos e sua vitalidade havia desaparecido. Felix o reconheceu e chegou a pedir um trocado para pegar erva de gato, disse até que dividiria com ele. Max até o ajudara com uns trocados que tinha com ele, mas recusou a oferta de Felix. Seguindo seu caminho, veio uma reflexão sobre escolhas da vida, Felix, sempre teve tudo para ser algo maior que um gato decadente de esquina, com certeza, ele teria vaga em algum time profissional de queimada, diferente dele que era desajustado. Amargurado pela tristeza de ver alguém que ele teve convívio e dotado de grande potencial naquela situação, uma sensação de que nada fazia sentido lhe percorreu, era ele que tinha tudo para estar naquela situação, não o Felix. Mas como se fosse uma resposta a seus pensamentos turvos, veio-lhe à mente, que ele merecia não estar naquela situação, pois mesmo tendo "motivos" para aquilo, ele decidiu, ele escolher seguir seu próprio caminho. Ele até tentou tirar Felix daquela situação, mas o bicho, já estava desiludido, ele sentiu que não dependia dele para que o gato mudasse seu estilo de vida. O que ele podia fazer era ajudar o velho conhecido, Max sempre, mudava sua rota para passar onde o gato poderia estar e assim o ajudar com algo, seja uma moeda ou um conselho.';
+        drogas_message = 'Ele tinha chegado até ali aos “troncos e barragens” como dizia o velho castor Bartolomeu, ele nunca foi tentado a experimentar qualquer tipo de droga, ele pensava que a verdadeira liberdade e realização não provinha delas, pensava que se elas fossem se manifestar, iria vir de dentro, da alma. Na turma de Max tinha um gato, que chamava Felix, ele era bem esperto e inteligente, era disputado pelos times de queimada da escola, pois o bicho era capaz de desviar da bola mais fugaz, ter ele no time era quase a certeza de ganhar, diferente de Max, que sempre fora grande e desajeitado.  Anos depois, Max reencontrou Felix, sua situação era decadente, seus olhos antes brilhantes agora eram opacos e sua vitalidade havia desaparecido. Felix o reconheceu e chegou a pedir um trocado para pegar erva de gato, disse até que dividiria com ele. Max até o ajudara com uns trocados que tinha com ele, mas recusou a oferta de Felix. Seguindo seu caminho, veio uma reflexão sobre escolhas da vida, Felix, sempre teve tudo para ser algo maior que um gato decadente de esquina, com certeza, ele teria vaga em algum time profissional de queimada, diferente dele que era desajustado. Amargurado pela tristeza de ver alguém que ele teve convívio e dotado de grande potencial naquela situação, uma sensação de que nada fazia sentido lhe percorreu, era ele que tinha tudo para estar naquela situação, não o Felix. Mas como se fosse uma resposta a seus pensamentos turvos, veio-lhe à mente, que ele merecia não estar naquela situação, pois mesmo tendo "motivos" para aquilo, ele decidiu, ele escolher seguir seu próprio caminho. Ele até tentou tirar Felix daquela situação, mas o bicho, já estava desiludido, ele sentiu que não dependia dele para que o gato mudasse seu estilo de vida. O que ele podia fazer era ajudar o velho conhecido, Max sempre, mudava sua rota para passar onde o gato poderia estar e assim o ajudar com algo, seja uma moeda ou um conselho. ';
     }
 
     if (drogas === 'Não' && gato === 'Não' && leao === 'Sim') {
@@ -699,3 +706,22 @@ function final_h() {
 function resetPage() {
     location.reload();
 }
+
+var finalDiv = document.getElementById('final');
+var startY;
+
+finalDiv.addEventListener('touchstart', function(event) {
+  startY = event.touches[0].clientY; // Obtém a posição inicial do toque
+});
+
+finalDiv.addEventListener('touchmove', function(event) {
+  var currentY = event.touches[0].clientY; // Obtém a posição atual do toque
+
+  // Calcula o deslocamento do toque em relação à posição inicial
+  var deltaY = currentY - startY;
+
+  // Rola o conteúdo da div na direção do deslocamento
+  finalDiv.scrollTop -= deltaY;
+
+  startY = currentY; // Atualiza a posição inicial para o próximo movimento
+});
