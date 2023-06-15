@@ -1,6 +1,6 @@
 Bugs:
 
-A barra de rolagem fica sempre acopnahando e não permite que o usuario a role para cima caso o usuario queira. 
+*Tirar velocidade rapida, colocada afim de testes. Velocidade ideal é de 60 - 65.
  
 AInda em dispositivos moveis, o mesmo fica bloqueando a tela enquanto o texto é apresentado 
 
@@ -9,14 +9,18 @@ Tamanho da fonte, responsivo
 
 Melhorias:
 
-Substituir "Trasar" por "Amar", pelo menos na pergunta. 
+ 
 
-Melhorar apresentação do final.
+Melhorar apresentação do final.-- Imagem ajustada.
+Adicionar fade-in ao fieldset final e ao texto, de modo que primeiro venha o fieldset e depois o texto.
+
+Colocar botao de reset sobre a imagem final na parte inferior a direita.
+Adicionar icon de feedback, na parte inferior a esquerda sobre a imagem final 
 
 
 Trasiçao entre "Amor" e "Drogas" não está legal. 
 
-Comprimir imagem de background, para melhor carregamento.
+
 
 
 

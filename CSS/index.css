@@ -108,9 +108,30 @@
 
 }
 
+
 .Entrar_button:disabled {
     background-color: #eee;
     color: #aaa;
     cursor: auto;
 
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-icon {
+    transition: transform 0.3s ease;
+    margin-right: 10px;
+}
+
+.social-icon :hover{
+    transform: scale(1.20);
+}
+
+.social-icon img {
+    padding: 10px;
+    width: 80px;
+    height: 80px;
 }
