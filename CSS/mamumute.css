@@ -120,7 +120,17 @@ fieldset {
 
 .fade-in {
   opacity: 0;
-  animation: fade-in 7s ease-in forwards;
+  animation: fade-in 8s ease-in forwards;
+}
+
+.finalMessage{
+  opacity: 0;
+  animation: fade-in 6s ease-in forwards;
+}
+
+.final{
+  opacity: 0;
+  animation: fade-in 4s ease-in forwards;
 }
 
 @keyframes fade-in {

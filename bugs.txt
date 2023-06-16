@@ -3,34 +3,10 @@ Bugs:
 *Tirar velocidade rapida, colocada afim de testes. Velocidade ideal é de 60 - 65 -- 75. ( 65 * i )
 *em fase de teste o ideal é 1.
  
-AInda em dispositivos moveis, o mesmo fica bloqueando a tela enquanto o texto é apresentado 
--- Uma alternativa para isso, seria usar o código para simular um toque ou clique.
-
-
-Tamanho da fonte, responsivo
+AInda em dispositivos moveis, o mesmo fica bloqueando a tela enquanto o texto é apresentado. ( Enquanto o mesmo for um 'site', não será possivel fazer isso)
 
 Melhorias:
-
-Forms: Indentificar o navegador do usuario
- 
-
-
-Trasiçao entre "Amor" e "Drogas" não está legal. 
-
-
-
-
-
-Erros do texto:
-
-Urso tentou ajudá-lo
-Encontrou alguém especial
-Não bebia ha muitos anos
-Tom ficou nervo ( coreecao, ele ficou tenso
 
 Ideias:
 
 **Vincular as escolhas a um formulario do forms. (Inviavel no momento)
-Registrar os valor dos console log ém uma unica variavel
-
-Mudar favicon padrão
